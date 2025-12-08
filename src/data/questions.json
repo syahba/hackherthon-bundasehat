@@ -116,7 +116,7 @@
   },
   {
     "id": "Q06",
-    "question": "Bagaimana kualitas tidur semalam",
+    "question": "Bagaimana kualitas tidur semalam?",
     "category": "energy",
     "allowMultiple": false,
     "options": [

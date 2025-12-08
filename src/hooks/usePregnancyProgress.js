@@ -3,7 +3,7 @@ import usePersistedProfile from "./usePersistedProfile";
 import {
   shouldUpdatePregnancyWeek,
   applyPregnancyWeekUpdate,
-} from "../utils/userUtils";
+} from "../utils/userCalculation";
 
 export default function usePregnancyProgress() {
   const { profile, saveProfile } = usePersistedProfile();

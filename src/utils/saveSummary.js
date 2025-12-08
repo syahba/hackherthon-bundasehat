@@ -1,4 +1,4 @@
-const KEY = "dailySummaries_v1";
+const KEY = "dailySummaries";
 
 export function loadSummaries() {
   try {

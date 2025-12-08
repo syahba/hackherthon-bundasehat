@@ -1,29 +1,52 @@
-// src/services/matcherService.js
+// src/services/libraryMatcher.js
 import DANGERS from "../data/dangerSigns.json";
-import HERBALS from "../data/herbal.json";
-import NUTRITIONS from "../data/nutrition.json";
+import HERBALS from "../data/herbalMedicine.json";
+import NUTRITIONS from "../data/nutritionalDiet.json";
 import QUESTIONS from "../data/questions.json";
-import { getTrimesterFromWeek } from "../utils/dateUtils";
+import { getTrimesterFromWeek } from "../utils/dateFormatter";
 
-/** collect keywords from the selected answer labels */
+/** collect keywords from selected answers (supports multi-select answers) */
 function collectKeywordsFromAnswers(answers = {}) {
   const kws = [];
   for (const q of QUESTIONS) {
-    const aid = answers[q.id];
-    if (!aid) continue;
-    const ans = q.answers.find((a) => a.id === aid);
-    if (ans && ans.label) {
-      const parts = ans.label
-        .toLowerCase()
-        .split(/[^a-z0-9\u00C0-\u017F]+/)
-        .filter(Boolean);
-      kws.push(...parts);
+    const selected = answers[q.id];
+    if (!selected) continue;
+
+    // allowMultiple -> selected can be array of option indices/texts/ids
+    if (Array.isArray(selected)) {
+      for (const sel of selected) {
+        const matchOpt = q.options.find(
+          (o) => o.text === sel || o.id === sel || o.value === sel
+        );
+        const label = matchOpt ? matchOpt.text : sel;
+        if (label) {
+          kws.push(
+            ...label
+              .toLowerCase()
+              .split(/[^a-z0-9\u00C0-\u017F]+/)
+              .filter(Boolean)
+          );
+        }
+      }
+    } else {
+      const matchOpt = q.options.find(
+        (o) => o.text === selected || o.id === selected || o.value === selected
+      );
+      const label = matchOpt ? matchOpt.text : selected;
+      if (label) {
+        kws.push(
+          ...label
+            .toLowerCase()
+            .split(/[^a-z0-9\u00C0-\u017F]+/)
+            .filter(Boolean)
+        );
+      }
     }
   }
   return Array.from(new Set(kws));
 }
 
-/** match by keyword overlap and filter by trimester & age */
+/** match by keyword overlap and filter by trimester & age (motherAge) */
 function matchLibrary(items = [], keywords = [], trimester = 2, age = null) {
   const kwSet = new Set(keywords.map((k) => k.toLowerCase()));
   const candidates = [];
@@ -50,9 +73,9 @@ function matchLibrary(items = [], keywords = [], trimester = 2, age = null) {
  */
 export function matchAll({ answers = {}, userProfile = {} } = {}) {
   const keywords = collectKeywordsFromAnswers(answers);
-  const week = userProfile.currentWeek || userProfile.startWeek || 0;
+  const week = userProfile.currentWeek ?? userProfile.registeredWeek ?? 0;
   const trimester = getTrimesterFromWeek(week);
-  const age = userProfile.age || null;
+  const age = userProfile.motherAge ?? null;
 
   const dangerMatches = matchLibrary(DANGERS, keywords, trimester, age);
   const herbalMatches = matchLibrary(HERBALS, keywords, trimester, age);

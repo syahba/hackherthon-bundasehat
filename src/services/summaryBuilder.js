@@ -1,10 +1,9 @@
 import TEMPLATES from "../data/templates.json";
-import { matchAll } from "./matcherService";
-import { computeScores } from "./scoringService";
-import { formatISODate, getTrimesterFromWeek } from "../utils/dateUtils";
+import { matchAll } from "./libraryMatcher";
+import { computeScores } from "./scoreCalculator";
+import { formatISODate, getTrimesterFromWeek } from "../utils/dateFormatter";
 import DANGERS from "../data/dangerSigns.json";
 
-/** helpers */
 function getDangerDetailsByIds(ids = []) {
   return ids.map((id) => DANGERS.find((d) => d.id === id)).filter(Boolean);
 }
@@ -12,7 +11,6 @@ function scoreToPercent(score) {
   return Math.round((score / 10) * 100);
 }
 
-/** overallStatus rules */
 function determineOverallStatus(healthScore, nutritionScore, dangerIds = []) {
   const hp = scoreToPercent(healthScore);
   const np = scoreToPercent(nutritionScore);
@@ -30,7 +28,6 @@ function determineOverallStatus(healthScore, nutritionScore, dangerIds = []) {
   return "Warning";
 }
 
-/** doctor advice mapping */
 function buildDoctorAdvice(dangerIds = [], overallStatus) {
   if (!dangerIds || dangerIds.length === 0) {
     if (overallStatus === "Bad") {
@@ -62,7 +59,6 @@ function buildDoctorAdvice(dangerIds = [], overallStatus) {
   };
 }
 
-/** choose band text */
 function bandFromScore(score, templateKey) {
   const pct = scoreToPercent(score);
   if (pct >= 75) return { band: "good", text: TEMPLATES[templateKey].good };
@@ -71,10 +67,6 @@ function bandFromScore(score, templateKey) {
   return { band: "bad", text: TEMPLATES[templateKey].bad };
 }
 
-/**
- * buildSummary({ answers, userProfile })
- * returns final object matching requested JSON shape
- */
 export function buildSummary({ answers = {}, userProfile = {} } = {}) {
   const today = formatISODate(new Date());
   const week = userProfile.currentWeek || userProfile.startWeek || 0;
@@ -101,10 +93,10 @@ export function buildSummary({ answers = {}, userProfile = {} } = {}) {
   const doctorAdvice = buildDoctorAdvice(dangerIds, overallStatus);
 
   // sections
-  const kondisi = bandFromScore(healthScore, "kondisiBunda");
-  const nutrisi = bandFromScore(nutritionScore, "nutrisiBunda");
-  const istirahat = bandFromScore(healthScore, "istirahatMood"); // health influences rest band
-  const keluhan = bandFromScore(healthScore, "keluhanTandaBahaya");
+  const condition = bandFromScore(healthScore, "overallCondition");
+  const nutrition = bandFromScore(nutritionScore, "nutritionBalance");
+  const energy = bandFromScore(healthScore, "energyControl"); // health influences rest band
+  const pain = bandFromScore(healthScore, "painManagement");
 
   // build item recommendations for nutrition/herbal based on raw matches
   const recFoods = ((matches.raw && matches.raw.nutritionMatches) || [])
@@ -139,19 +131,19 @@ export function buildSummary({ answers = {}, userProfile = {} } = {}) {
     healthScore,
     nutritionScore,
     overallStatus,
-    kondisiBunda: {
-      summary: kondisi.text,
-      explanation: `Ringkasan berdasarkan kondisi fisik dan gerakan janin; usia kehamilan: minggu ke-${week}, trimester ${trimester}.`,
+    overallCondition: {
+      summary: condition.text,
+      explanation: `Ringkasan berdasarkan condition fisik dan gerakan janin; usia kehamilan: minggu ke-${week}, trimester ${trimester}.`,
       doctorAdvice,
     },
-    nutrisiBunda: {
-      summary: nutrisi.text,
+    nutritionBalance: {
+      summary: nutrition.text,
       recommendations: [...recFoods, ...recHerb],
     },
-    istirahatMood: {
-      summary: istirahat.text,
+    energyControl: {
+      summary: energy.text,
       recommendations:
-        istirahat.band === "good"
+        energy.band === "good"
           ? []
           : [
               "Tidur lebih awal",
@@ -159,8 +151,8 @@ export function buildSummary({ answers = {}, userProfile = {} } = {}) {
               "Teknik relaksasi pernapasan",
             ],
     },
-    keluhanTandaBahaya: {
-      summary: keluhan.text,
+    painManagement: {
+      summary: pain.text,
       warnings: warningItems,
     },
     libraryMatches: {

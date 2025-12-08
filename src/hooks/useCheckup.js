@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import usePersistedProfile from "./usePersistedProfile";
-import { updateStreak } from "../utils/userUtils";
-import { formatISODate } from "../utils/dateUtils";
+import { updateStreak } from "../utils/userCalculation";
+import { formatISODate } from "../utils/dateFormatter";
 
 export default function useCheckup() {
   const { profile, saveProfile } = usePersistedProfile();

@@ -1,24 +1,12 @@
 import QUESTIONS from "../data/questions.json";
-import { getTrimesterFromWeek } from "../utils/dateUtils";
+import { getTrimesterFromWeek } from "../utils/dateFormatter";
 
-/**
- * Category weights
- * keluhan_tanda_bahaya => 3
- * kondisi_bunda => 2
- * nutrisi_bunda => 2
- * istirahat_mood => 1
- */
 const CATEGORY_WEIGHTS = {
-  keluhan_tanda_bahaya: 3,
-  kondisi_bunda: 2,
-  nutrisi_bunda: 2,
-  istirahat_mood: 1,
+  pain: 3,
+  nutrition: 2,
+  energy: 1,
 };
 
-/**
- * map answer score (0..3) -> internal value
- * 3 -> +2 (very good), 2 -> +1 (ok), 1 -> 0 (mild issue), 0 -> -2 (critical)
- */
 function mapOptionValue(rawScore) {
   if (rawScore === 3) return 2;
   if (rawScore === 2) return 1;
@@ -26,10 +14,7 @@ function mapOptionValue(rawScore) {
   return -2;
 }
 
-/**
- * Apply personalization adjustments based on age & trimester & specific answers.
- * Returns { healthAdj, nutritionAdj } additive values applied AFTER base accumulation.
- */
+// Apply personalization adjustments based on age & trimester & specific answers
 function personalizationAdjustments(answers = {}, userProfile = {}) {
   let healthAdj = 0;
   let nutritionAdj = 0;
@@ -87,7 +72,7 @@ function personalizationAdjustments(answers = {}, userProfile = {}) {
     }
 
     // nutrition-specific extra penalty in T1 if very poor (q3/q4/q5)
-    if (q.category.includes("nutrisi_bunda")) {
+    if (q.category.includes("nutrition")) {
       if (raw === 0 && trimester === 1) nutritionAdj += -2;
     }
 
@@ -100,14 +85,6 @@ function personalizationAdjustments(answers = {}, userProfile = {}) {
   return { healthAdj, nutritionAdj };
 }
 
-/**
- * Compute scores:
- * - Base accumulation via category weights and option mapped values
- * - Add personalization adjustments
- * - Normalize to 0..10 scale
- *
- * Returns: { healthScore, nutritionScore, raw }
- */
 export function computeScores({ answers = {}, userProfile = {} } = {}) {
   let healthRaw = 0;
   let healthWeightTotal = 0;
@@ -128,7 +105,7 @@ export function computeScores({ answers = {}, userProfile = {} } = {}) {
     for (const cat of q.category) {
       const weight = CATEGORY_WEIGHTS[cat] || 0;
       if (!weight) continue;
-      if (cat === "nutrisi_bunda") {
+      if (cat === "nutrition") {
         nutritionRaw += val * weight;
         nutritionMin += -2 * weight;
         nutritionMax += 2 * weight;

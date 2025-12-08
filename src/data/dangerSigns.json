@@ -30,8 +30,6 @@
     ],
     "urgency": "Segera ke faskes jika: Darah mengalir banyak, Nyeri kuat, Gumpalan, Pusing, Gerakan janin berkurang",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["bercak", "perdarahan", "darah", "spotting"],
     "severity": "critical"
   },
@@ -63,8 +61,6 @@
     ],
     "urgency": "Segera ke faskes jika: Bengkak tiba-tiba, Nyeri kepala parah, Penglihatan kabur, Tekanan darah tinggi",
     "trimester_safe": [2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["bengkak", "pembengkakan", "edema"],
     "severity": "critical"
   },
@@ -96,8 +92,6 @@
     ],
     "urgency": "Segera ke faskes jika: Darah banyak, Gumpalan, Bau tidak normal, Nyeri hebat, Gerakan janin berkurang",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["perdarahan", "cairan", "ketuban", "darah", "bocor"],
     "severity": "critical"
   },
@@ -127,8 +121,6 @@
     ],
     "urgency": "Segera ke faskes jika: Muntah terus-menerus, Tidak bisa minum, Lemas hebat",
     "trimester_safe": [1, 2],
-    "min_age": null,
-    "max_age": null,
     "matches": ["mual", "muntah", "dehidrasi", "sulit makan"],
     "severity": "moderate"
   },
@@ -147,8 +139,6 @@
     "impact": ["Cedera akibat jatuh", "Gangguan sirkulasi"],
     "urgency": "Segera periksa jika pingsan, detak jantung tidak normal, atau sesak napas",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["pusing", "pingsan", "lemas", "sinkop"],
     "severity": "moderate"
   },
@@ -173,8 +163,6 @@
     "impact": ["Keguguran", "Kelahiran prematur", "Infeksi"],
     "urgency": "Segera ke faskes jika: Nyeri hebat, Pendarahan, Muntah",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["nyeri perut", "kontraksi", "kram", "nyeri bawah"],
     "severity": "critical"
   },
@@ -193,8 +181,6 @@
     "impact": ["Serangan jantung", "Emboli", "Bahaya bagi ibu dan janin"],
     "urgency": "Segera ke faskes jika nyeri hebat atau sesak napas",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["nyeri dada", "sesak", "napas pendek"],
     "severity": "critical"
   },
@@ -213,8 +199,6 @@
     "impact": ["Infeksi parah", "Dehidrasi", "Kelahiran prematur"],
     "urgency": "Segera jika suhu >38°C dan tidak turun atau tidak bisa minum",
     "trimester_safe": [1, 2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["demam", "suhu tinggi", "fever"],
     "severity": "moderate"
   },
@@ -232,8 +216,6 @@
     "impact": ["Pre-eklampsia", "Risiko kejang"],
     "urgency": "Segera ke faskes jika penglihatan kabur mendadak atau nyeri kepala hebat",
     "trimester_safe": [2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["penglihatan", "kabur", "blur", "bintik"],
     "severity": "critical"
   },
@@ -256,8 +238,6 @@
     "impact": ["Hipoksia janin", "Risiko kematian janin"],
     "urgency": "Segera ke faskes jika tidak ada gerakan >12 jam atau berkurang drastis",
     "trimester_safe": [2, 3],
-    "min_age": null,
-    "max_age": null,
     "matches": ["gerakan", "tidak terasa", "kurang gerakan", "tendangan"],
     "severity": "critical"
   }

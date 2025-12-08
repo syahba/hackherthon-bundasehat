@@ -4,7 +4,7 @@ export function formatISODate(d) {
 }
 
 export function getTrimesterFromWeek(week) {
-  if (!week && week !== 0) return 2;
+  if (week === undefined || week === null) return 2;
   if (week <= 13) return 1;
   if (week <= 27) return 2;
   return 3;
