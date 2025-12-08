@@ -1,0 +1,55 @@
+// profile
+{
+  "email": "test@email.com",
+  "password": "123456",
+  "name": "user",
+  "motherAge": 12,
+  "registeredWeek": 12,
+  "registeredDate": "2025-12-08",
+  "currentWeek": 12,
+  "dueDate": "2025-12-08",
+  "streak": 1,
+  "lastCheckupDate": "2025-12-08"
+}
+
+// summary
+{
+  "id": "2025-12-04",
+  "date": "2025-12-04",
+  "pregnancyWeek": 24,
+  "trimester": 2,
+  "healthScore": 6,
+  "nutritionScore": 5,
+  "status": "Waspada", // Aman | Waspada | Bahaya
+  "overallCondition": {
+    "summary": "Terdapat sedikit bengkak dan gerakan janin terasa lebih sedikit dari biasanya. Tidak ada pendarahan berat.", // should define the template for overall condition summary and dymic value placing
+    "doctorAdvice": "Pantau; periksa jika gejala bertambah dalam 48 jam atau jika gerakan janin menurun lagi." // if Aman -> "Bunda aman, tetap jaga kesehatan dan rutin cek ya.", if Waspada -> "Bunda perlu menemui dokter dalam 3-7 hari kedepan ya.", if Bahaya -> "Segera perikda ke dokter dalam 24 jam ya, Bunda."
+  },
+  "nutritionBalance": {
+    "summary": "Asupan cukup tapi kurang variasi; perlu tambah sayur dan sumber protein.", // should define the template for nurtition balance summary and dymic value placing
+    "recommendations": [ // can be empty if all is well
+      { "type": "nutrition", "id": "N01", "item": "Konsumsi sayur bening bayam dan jagung" }, // if getting from neutirionaldiet or herbal medicine, "item" value should be -> Konsumsi/Minum ("konsumsi" for nutrition, "minum" for hebal) + name of the data (e.g., Sayur Bayam, Jahe) but lowercased
+      { "type": "herbal", "id": "H06", "item": "Mimum daun kelor" },
+      { "type": null, "id": null, "item": "Tingkatkan minum ke 7-8 gelas" } // if not from data, type and if should be null. should also define other recommendation possibilities outside the nutrition and herbal data
+    ]
+  },
+  "energyControl": {
+    "summary": "Tidur cukup 5-7 jam, sedikit stress. Perbanyak istirahat malam.", // should define the template for enegery control summary and dymic value placing
+    "recommendations": [ // can be empty if all is well
+        { "type": null, "id": null, "item": "Tidur lebih awal" }, // should define personal recommendation possibility for rest and mood related
+        { "type": null, "id": null, "item": "Coba teknik relaksasi pernapasan 4-4-4" }
+    ]
+  },
+  "painManagement": {
+    "summary": "Keluhan: bengkak ringan. Tidak ada perdarahan.", // should define the template for pain management summary and dymic value placing
+    "recommendations": [ // can be empty if all is well
+        { "type": null, "id": null, "item": "Pantau secara berkala" }, // should define personal recommendation possibility related to pain and condition
+        { "type": "signs", "id": "D02", "item": "Pelajari penyebab bengkak berlebihan" }, // "item" value format for danger signs data -> Pelajar penyebab + lower cased name (e.g., Bengkak Berlebihan)
+    ],
+  },
+  "libraryMatches": {
+    "dangerSigns": ["D02"],
+    "herbals": ["H06","H03"],
+    "nutrition": ["N01"]
+  }
+}

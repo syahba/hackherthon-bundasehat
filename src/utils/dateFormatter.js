@@ -1,5 +1,3 @@
-// src/utils/dateUtils.js
-
 export function formatISODate(d) {
   const iso = new Date(d).toISOString();
   return iso.slice(0, 10);
@@ -12,7 +10,6 @@ export function getTrimesterFromWeek(week) {
   return 3;
 }
 
-// new helpers
 export function daysBetween(d1, d2) {
   const t1 = new Date(d1).setHours(0, 0, 0, 0);
   const t2 = new Date(d2).setHours(0, 0, 0, 0);

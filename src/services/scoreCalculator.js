@@ -1,4 +1,3 @@
-// src/services/scoringService.js
 import QUESTIONS from "../data/questions.json";
 import { getTrimesterFromWeek } from "../utils/dateUtils";
 

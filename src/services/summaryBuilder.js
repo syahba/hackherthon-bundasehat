@@ -1,4 +1,3 @@
-// src/services/summaryBuilder.js
 import TEMPLATES from "../data/templates.json";
 import { matchAll } from "./matcherService";
 import { computeScores } from "./scoringService";
