@@ -1,0 +1,22 @@
+{
+  "kondisiBunda": {
+    "good": "Kondisi Bunda secara umum baik hari ini. Tidak ada tanda bahaya utama pada tubuh atau gerakan janin.",
+    "warning": "Terdapat beberapa hal yang perlu diperhatikan (mis. bengkak ringan atau gerakan janin menurun). Pantau dalam beberapa hari dan hubungi nakes jika memburuk.",
+    "bad": "Ditemukan tanda yang perlu perhatian segera. Mohon segera menghubungi fasilitas kesehatan."
+  },
+  "nutrisiBunda": {
+    "good": "Asupan nutrisi Bunda sudah baik. Pertahankan pola makan seimbang.",
+    "warning": "Asupan kurang bervariasi atau hidrasi kurang. Tambah sayur, protein, dan perbanyak minum.",
+    "bad": "Asupan nutrisi sangat kurang — segera konsultasikan dan prioritaskan makanan bergizi."
+  },
+  "istirahatMood": {
+    "good": "Tidur dan mood Bunda dalam kondisi baik. Lanjutkan kebiasaan ini.",
+    "warning": "Tidur atau mood sedikit terganggu. Perbanyak istirahat, teknik relaksasi, atau istirahat siang singkat.",
+    "bad": "Tidur dan mood sangat terganggu. Pertimbangkan untuk menghubungi dukungan keluarga atau tenaga kesehatan."
+  },
+  "keluhanTandaBahaya": {
+    "good": "Tidak ada keluhan atau tanda bahaya yang signifikan hari ini.",
+    "warning": "Ada keluhan ringan hingga sedang. Pantau dan hubungi nakes jika bertambah atau tidak membaik dalam 3-7 hari.",
+    "bad": "Terdapat tanda bahaya yang perlu penanganan segera. Silakan ke fasilitas kesehatan sekarang."
+  }
+}

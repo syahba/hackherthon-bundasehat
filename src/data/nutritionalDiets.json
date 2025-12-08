@@ -1,0 +1,102 @@
+[
+  {
+    "id": "N01",
+    "title": "Sayur Bening Bayam dan Jagung",
+    "summary": "Sup sayur bening dengan bayam dan jagung, kaya zat besi dan vitamin.",
+    "ingredients": ["bayam", "jagung", "bawang merah", "bawang putih"],
+    "benefits": ["zat besi", "vitamin A", "vitamin C", "serat"],
+    "preparation": "Tumis bawang, rebus jagung, tambah bayam hingga layu.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["bayam", "zat besi", "anemia", "sayur"]
+  },
+  {
+    "id": "N02",
+    "title": "Nasi Goreng Merah Telur Kecap",
+    "summary": "Nasi goreng bergizi dengan telur untuk energi stabil.",
+    "ingredients": ["nasi", "telur", "kecap manis", "bawang merah"],
+    "benefits": ["karbohidrat kompleks", "protein", "vitamin B"],
+    "preparation": "Tumis bumbu, masukkan nasi, tambah telur hingga matang.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["nasi goreng", "protein", "energi"]
+  },
+  {
+    "id": "N03",
+    "title": "Tumis Daun Katuk dan Labu Siam",
+    "summary": "Sayur tumis kaya kalsium dan vitamin untuk tulang dan janin.",
+    "ingredients": ["daun katuk", "labu siam", "bawang"],
+    "benefits": ["kalsium", "vitamin A", "serat"],
+    "preparation": "Tumis bawang, masak labu dan tambahkan daun katuk.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["katuk", "kalsium", "tulang"]
+  },
+  {
+    "id": "N04",
+    "title": "Pindang Bandeng Kuah Kuning",
+    "summary": "Ikan bandeng sumber protein & omega-3 untuk pertumbuhan janin.",
+    "ingredients": ["ikan bandeng", "kunyit", "bumbu"],
+    "benefits": ["protein", "omega-3"],
+    "preparation": "Rebus ikan dengan bumbu kuning dan sajikan.",
+    "trimester_safe": [2, 3],
+    "matches": ["ikan", "protein", "omega"]
+  },
+  {
+    "id": "N05",
+    "title": "Sup Kacang Hijau",
+    "summary": "Sup kacang hijau untuk serat, protein, dan pencegahan sembelit.",
+    "ingredients": ["kacang hijau", "gula merah", "air"],
+    "benefits": ["protein", "serat", "zat besi"],
+    "preparation": "Rebus kacang hijau hingga empuk; tambahkan gula merah.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["kacang hijau", "sembelit"]
+  },
+  {
+    "id": "N06",
+    "title": "Pepes Tahu Ikan Teri",
+    "summary": "Pepes kukus kaya kalsium, protein, dan mudah dicerna.",
+    "ingredients": ["tahu", "ikan teri", "bumbu"],
+    "benefits": ["kalsium", "protein", "vitamin B"],
+    "preparation": "Bungkus campuran dengan daun pisang; kukus hingga matang.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["tahu", "ikan teri", "kalsium"]
+  },
+  {
+    "id": "N07",
+    "title": "Lodeh Kacang Panjang dan Tempe",
+    "summary": "Lodeh bergizi dengan protein nabati dan serat.",
+    "ingredients": ["kacang panjang", "tempe", "santan", "bumbu"],
+    "benefits": ["protein nabati", "serat", "vitamin B"],
+    "preparation": "Tumis, masukkan santan dan kacang panjang; masak hingga matang.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["tempe", "kacang panjang", "protein nabati"]
+  },
+  {
+    "id": "N08",
+    "title": "Ubi Jalar Rebus/Kukus",
+    "summary": "Ubi jalar sebagai sumber energi stabil dan serat.",
+    "ingredients": ["ubi jalar"],
+    "benefits": ["karbohidrat kompleks", "serat"],
+    "preparation": "Rebus atau kukus ubi hingga empuk.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["ubi", "energi", "lapar"]
+  },
+  {
+    "id": "N09",
+    "title": "Sayur Asem Sederhana",
+    "summary": "Sayur asem kaya vitamin dan serat untuk imun dan pencernaan.",
+    "ingredients": ["kacang panjang", "labu siam", "jagung", "asam jawa"],
+    "benefits": ["vitamin C", "serat", "antioksidan"],
+    "preparation": "Rebus sayuran dengan asam jawa; sajikan hangat.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["sayur asem", "imun", "serat"]
+  },
+  {
+    "id": "N10",
+    "title": "Omelet Sayur Wortel & Bayam",
+    "summary": "Omelet gizi seimbang dengan protein, vitamin, dan serat.",
+    "ingredients": ["telur", "wortel", "bayam"],
+    "benefits": ["protein", "vitamin A", "zat besi"],
+    "preparation": "Campur sayur dengan telur; masak hingga matang.",
+    "trimester_safe": [1, 2, 3],
+    "matches": ["omelet", "telur", "protein"]
+  }
+]

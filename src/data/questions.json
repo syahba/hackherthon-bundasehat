@@ -1,0 +1,264 @@
+[
+  {
+    "id": "q1",
+    "question": "Bagaimana kondisi Bunda hari ini",
+    "category": ["istirahat_mood"],
+    "answers": [
+      {
+        "id": "q1a",
+        "label": "Merasa sangat baik",
+        "score": 3,
+        "popup": "Hebat! Terus jaga energi positifmu hari ini"
+      },
+      {
+        "id": "q1b",
+        "label": "Merasa cukup lelah",
+        "score": 2,
+        "popup": "Sip. Ingat untuk istirahat sejenak"
+      },
+      {
+        "id": "q1c",
+        "label": "Merasa tidak baik",
+        "score": 1,
+        "popup": "Tenang. Besok akan lebih baik — tetap semangat"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "Bagaimana perasaan Bunda hari ini",
+    "category": ["istirahat_mood"],
+    "answers": [
+      {
+        "id": "q2a",
+        "label": "Tenang dan cukup baik",
+        "score": 3,
+        "popup": "Mantap. Emosi yang tenang bagus untuk Bunda dan janin"
+      },
+      {
+        "id": "q2b",
+        "label": "Ada sedikit stress dan khawatir",
+        "score": 2,
+        "popup": "Oke. Tarik napas, lakukan hal kecil untuk menenangkan diri"
+      },
+      {
+        "id": "q2c",
+        "label": "Sangat stress atau sedih",
+        "score": 1,
+        "popup": "Bunda, jangan khawatir sendiri. Cari dukungan dan tetap kuat"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "Bagaimana pola makan hari ini",
+    "category": ["nutrisi_bunda"],
+    "answers": [
+      {
+        "id": "q3a",
+        "label": "Makan teratur cukup dan bervariasi",
+        "score": 3,
+        "popup": "Luar biasa. Tubuh Bunda dan janin senang hari ini"
+      },
+      {
+        "id": "q3b",
+        "label": "Makan cukup tapi kurang bervariasi",
+        "score": 2,
+        "popup": "Bagus. Besok coba tambah variasi sayur atau protein"
+      },
+      {
+        "id": "q3c",
+        "label": "Makan sedikit tidak teratur dan bervariasi",
+        "score": 1,
+        "popup": "Sip. Ingat untuk makan teratur agar energi stabil"
+      },
+      {
+        "id": "q3d",
+        "label": "Belum makan sama sekali hari ini",
+        "score": 0,
+        "popup": "Tenang. Yuk segera makan sesuatu yang sehat"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "Makanan apa saja yang Bunda konsumsi hari ini",
+    "category": ["nutrisi_bunda"],
+    "answers": [
+      {
+        "id": "q4a",
+        "label": "Protein / Sayur / Biji-bijian / Tahu/Tempe",
+        "score": 3,
+        "popup": "Mantap. Asupan protein dan nutrisi tercukupi"
+      },
+      {
+        "id": "q4b",
+        "label": "Makanan olahan / junk food",
+        "score": 1,
+        "popup": "Tidak apa. Besok coba imbangi dengan makanan sehat"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "Berapa gelas air yang sudah Bunda minum hari ini",
+    "category": ["nutrisi_bunda"],
+    "answers": [
+      {
+        "id": "q5a",
+        "label": "Kurang dari 4 Gelas",
+        "score": 1,
+        "popup": "Oke. Jangan lupa minum air lebih banyak"
+      },
+      {
+        "id": "q5b",
+        "label": "4 Gelas",
+        "score": 2,
+        "popup": "Bagus. Tetap jaga hidrasi hari ini"
+      },
+      {
+        "id": "q5c",
+        "label": "Lebih dari 6 Gelas",
+        "score": 3,
+        "popup": "Hebat. Bunda dan janin tetap terhidrasi dengan baik"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "Bagaimana kualitas tidur semalam",
+    "category": ["istirahat_mood"],
+    "answers": [
+      {
+        "id": "q6a",
+        "label": "Sangat baik 7 jam atau lebih",
+        "score": 3,
+        "popup": "Mantap. Tidur yang cukup bikin Bunda dan janin sehat"
+      },
+      {
+        "id": "q6b",
+        "label": "Cukup 5-7 jam",
+        "score": 2,
+        "popup": "Bagus. Tidur cukup tetap membantu tubuh pulih"
+      },
+      {
+        "id": "q6c",
+        "label": "Kurang 3-5 jam",
+        "score": 1,
+        "popup": "Oke. Coba istirahat lebih awal malam ini"
+      },
+      {
+        "id": "q6d",
+        "label": "Sangat kurang kurang dari 3 jam",
+        "score": 0,
+        "popup": "Bunda jangan lupa prioritaskan istirahat"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "question": "Apakah hari ini Bunda merasakan keluhan",
+    "category": ["keluhan_tanda_bahaya"],
+    "answers": [
+      {
+        "id": "q7a",
+        "label": "Mual / Pusing / Nyeri Pundak / Nyeri Dada",
+        "score": 1,
+        "popup": "Oke. Catat keluhan ini dan jaga diri sebaik mungkin"
+      },
+      {
+        "id": "q7b",
+        "label": "Tidak ada keluhan",
+        "score": 3,
+        "popup": "Hebat. Tubuh Bunda bekerja dengan baik hari ini"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "question": "Apakah ada bengkak pada kaki tangan atau wajah",
+    "category": ["kondisi_bunda", "keluhan_tanda_bahaya"],
+    "answers": [
+      {
+        "id": "q8a",
+        "label": "Tidak ada sama sekali",
+        "score": 3,
+        "popup": "Mantap. Tubuh Bunda tetap nyaman dan sehat"
+      },
+      {
+        "id": "q8b",
+        "label": "Sedikit bengkak",
+        "score": 2,
+        "popup": "Oke. Istirahatkan kaki dan tetap jaga asupan cairan"
+      },
+      {
+        "id": "q8c",
+        "label": "Sangat bengkak",
+        "score": 0,
+        "popup": "Segera konsultasi. Kesehatan Bunda prioritas"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "question": "Apakah muncul perdarahan atau cairan",
+    "category": ["kondisi_bunda", "keluhan_tanda_bahaya"],
+    "answers": [
+      {
+        "id": "q9a",
+        "label": "Tidak ada sama sekali",
+        "score": 3,
+        "popup": "Bagus. Janin aman dan Bunda tetap nyaman"
+      },
+      {
+        "id": "q9b",
+        "label": "Sedikit bercak",
+        "score": 1,
+        "popup": "Oke. Catat dan tetap perhatikan tanda lainnya"
+      },
+      {
+        "id": "q9c",
+        "label": "Tampak jelas tidak banyak",
+        "score": 0,
+        "popup": "Bunda tetap waspada dan konsultasikan ke dokter jika perlu"
+      },
+      {
+        "id": "q9d",
+        "label": "Keluar jumlah banyak",
+        "score": 0,
+        "popup": "Segera ke dokter. Kesehatan Bunda dan janin penting"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "Apakah terasa gerakan hari ini",
+    "category": ["kondisi_bunda", "keluhan_tanda_bahaya"],
+    "answers": [
+      {
+        "id": "q10a",
+        "label": "Terasa normal",
+        "score": 3,
+        "popup": "Hebat. Janin aktif dan sehat"
+      },
+      {
+        "id": "q10b",
+        "label": "Terasa tapi lebih sedikit dari biasanya",
+        "score": 1,
+        "popup": "Oke. Tetap pantau gerakan janin"
+      },
+      {
+        "id": "q10c",
+        "label": "Tidak terasa gerakan",
+        "score": 0,
+        "popup": "Segera periksa ke dokter untuk memastikan janin baik"
+      },
+      {
+        "id": "q10d",
+        "label": "Kehamilan masih di bawah 18 minggu",
+        "score": 2,
+        "popup": "Oke. Gerakan janin akan terasa seiring usia kehamilan"
+      }
+    ]
+  }
+]
