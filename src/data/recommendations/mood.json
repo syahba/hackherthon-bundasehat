@@ -1,0 +1,27 @@
+[
+  {
+    "id": "REC_MOOD_BREATHING",
+    "item": "Coba teknik pernapasan 4-4-4 (embus 4, tahan 4, keluarkan 4)",
+    "type": "mood"
+  },
+  {
+    "id": "REC_MOOD_WALK",
+    "item": "Jalan ringan 10 menit untuk redakan kecemasan",
+    "type": "mood"
+  },
+  {
+    "id": "REC_MOOD_SUPPORT",
+    "item": "Bicarakan perasaan pada partner atau teman",
+    "type": "mood"
+  },
+  {
+    "id": "REC_MOOD_MINDFUL",
+    "item": "Praktikkan 5 menit mindful breathing",
+    "type": "mood"
+  },
+  {
+    "id": "REC_MOOD_JOURNAL",
+    "item": "Catat 3 hal yang membuatmu bersyukur hari ini",
+    "type": "mood"
+  }
+]

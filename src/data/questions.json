@@ -6,19 +6,25 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q01_OPT_A",
         "text": "Merasa sangat baik",
         "response": "Hebat! Jaga energi positif hari ini.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q01_OPT_B",
         "text": "Merasa cukup lelah",
         "response": "Ingat untuk istirahat sejenak ya.",
-        "score": 2
+        "score": 2,
+        "matches": []
       },
       {
+        "optionId": "Q01_OPT_C",
         "text": "Merasa tidak baik",
         "response": "Tenang, besok akan lebih baik, semangat!",
-        "score": 1
+        "score": 1,
+        "matches": []
       }
     ]
   },
@@ -29,19 +35,25 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q02_OPT_A",
         "text": "Tenang dan cukup baik",
         "response": "Emosi tenang bagus untuk Bunda & janin.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q02_OPT_B",
         "text": "Ada sedikit stress dan khawatir",
         "response": "Tarik napas, lakukan hal kecil menenangkan.",
-        "score": 2
+        "score": 2,
+        "matches": ["REC_MOOD_BREATHING", "REC_REST_SHORTNAP", "H09"]
       },
       {
+        "optionId": "Q02_OPT_C",
         "text": "Sangat stress atau sedih",
         "response": "Jangan khawatir sendiri, cari dukungan.",
-        "score": 1
+        "score": 1,
+        "matches": ["REC_MOOD_SUPPORT", "REC_MOOD_BREATHING", "H03"]
       }
     ]
   },
@@ -52,24 +64,32 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q03_OPT_A",
         "text": "Makan teratur, cukup, dan bernutrisi",
         "response": "Tubuh Bunda & janin senang hari ini.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q03_OPT_B",
         "text": "Makan cukup tapi kurang bernutrisi",
         "response": "Coba untuk makan bernutrisi ya Bunda.",
-        "score": 2
+        "score": 2,
+        "matches": ["N01", "N10"]
       },
       {
+        "optionId": "Q03_OPT_C",
         "text": "Makan sedikit dan kurang bervariasi",
         "response": "Besok coba tambah variasi menu makanan ya.",
-        "score": 1
+        "score": 1,
+        "matches": ["REC_HYDRATION_INCREASE", "N05", "N08"]
       },
       {
+        "optionId": "Q03_OPT_D",
         "text": "Belum makan dengan baik hari ini",
         "response": "Yuk segera makan sesuatu yang sehat.",
-        "score": 0
+        "score": 0,
+        "matches": ["REC_HYDRATION_INCREASE", "N02"]
       }
     ]
   },
@@ -80,14 +100,60 @@
     "allowMultiple": true,
     "options": [
       {
-        "text": "Daging Ayam; Daging Sapi; Ikan; Telur; Sayur-Sayuran; Biji-Bijian; Tahu/Tempe",
-        "response": "Bagus! Bunda sudah makan bernutrisi.",
-        "score": 3
+        "optionId": "Q04_OPT_AYAM",
+        "text": "Daging Ayam",
+        "response": "Bagus — sumber protein hewani yang mudah dicerna.",
+        "score": 1,
+        "matches": ["N06"]
       },
       {
+        "optionId": "Q04_OPT_SAPI",
+        "text": "Daging Sapi",
+        "response": "Sapi kaya zat besi dan protein.",
+        "score": 1,
+        "matches": []
+      },
+      {
+        "optionId": "Q04_OPT_IKAN",
+        "text": "Ikan",
+        "response": "Ikan berguna untuk omega-3 dan protein.",
+        "score": 1,
+        "matches": ["N04"]
+      },
+      {
+        "optionId": "Q04_OPT_TELUR",
+        "text": "Telur",
+        "response": "Telur sumber protein dan vitamin B.",
+        "score": 1,
+        "matches": ["N02", "N10"]
+      },
+      {
+        "optionId": "Q04_OPT_SAYUR",
+        "text": "Sayur-Sayuran",
+        "response": "Sayur membantu vitamin dan serat.",
+        "score": 1,
+        "matches": ["N01", "N09"]
+      },
+      {
+        "optionId": "Q04_OPT_BIJIBIJIAN",
+        "text": "Biji-Bijian",
+        "response": "Biji-bijian memberi serat dan energi stabil.",
+        "score": 1,
+        "matches": ["N08"]
+      },
+      {
+        "optionId": "Q04_OPT_TAHUTEMPE",
+        "text": "Tahu/Tempe",
+        "response": "Sumber protein nabati yang bagus.",
+        "score": 1,
+        "matches": ["N06", "N07"]
+      },
+      {
+        "optionId": "Q04_OPT_OTHER",
         "text": "Makan selain ini",
         "response": "Besok coba imbangi dengan makanan sehat ya.",
-        "score": 1
+        "score": 0,
+        "matches": []
       }
     ]
   },
@@ -98,19 +164,25 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q05_OPT_LESS4",
         "text": "Kurang dari 4 Gelas",
         "response": "Jangan lupa minum air lebih banyak.",
-        "score": 1
+        "score": 1,
+        "matches": ["REC_HYDRATION_INCREASE", "H02"]
       },
       {
-        "text": "4 -6 Gelas",
+        "optionId": "Q05_OPT_4_6",
+        "text": "4-6 Gelas",
         "response": "Tetap jaga hidrasi hari ini ya.",
-        "score": 2
+        "score": 2,
+        "matches": ["REC_HYDRATION_MAINTAIN"]
       },
       {
+        "optionId": "Q05_OPT_MORE6",
         "text": "Lebih dari 6 Gelas",
         "response": "Bunda & janin tetap terhidrasi dengan baik.",
-        "score": 3
+        "score": 3,
+        "matches": []
       }
     ]
   },
@@ -121,29 +193,39 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q06_OPT_7_9",
         "text": "Sangat baik; 7-9 jam",
         "response": "Tidur cukup bikin Bunda & janin sehat.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q06_OPT_6_7",
         "text": "Baik; 6-7 jam",
         "response": "Tidur cukup tetap bantu tubuh Bunda pulih.",
-        "score": 2
+        "score": 2,
+        "matches": []
       },
       {
+        "optionId": "Q06_OPT_5",
         "text": "Cukup; 5 jam",
         "response": "Coba istirahat lebih awal malam ini ya Bunda.",
-        "score": 1
+        "score": 1,
+        "matches": ["REC_REST_SLEEPHYGIENE", "REC_REST_SHORTNAP"]
       },
       {
+        "optionId": "Q06_OPT_3_4",
         "text": "Buruk; 3-4 jam",
         "response": "Jangan lupa prioritaskan istirahat Bunda.",
-        "score": 0
+        "score": 0,
+        "matches": ["REC_REST_SLEEPHYGIENE", "REC_MOOD_BREATHING", "H09"]
       },
       {
+        "optionId": "Q06_OPT_LESS3",
         "text": "Sangat buruk; kurang dari 3 jam",
         "response": "Perbaiki tidurnya ya Bunda.",
-        "score": 0
+        "score": 0,
+        "matches": ["REC_REST_SLEEPHYGIENE", "REC_REST_MEDICAL_CHECK", "H03"]
       }
     ]
   },
@@ -154,14 +236,39 @@
     "allowMultiple": true,
     "options": [
       {
-        "text": "Mual; Pusing; Nyeri Perut; Nyeri Dada",
+        "optionId": "Q07_OPT_MUAL",
+        "text": "Mual",
         "response": "Awasi keluhan bila berlanjut ya Bunda.",
-        "score": 1
+        "score": 1,
+        "matches": ["H01", "REC_MOOD_BREATHING", "REC_HYDRATION_SMALL_SIP"]
       },
       {
+        "optionId": "Q07_OPT_PUSING",
+        "text": "Pusing",
+        "response": "Istirahat dan periksa tanda lain jika berlanjut.",
+        "score": 1,
+        "matches": ["D05", "REC_REST_LIE_DOWN"]
+      },
+      {
+        "optionId": "Q07_OPT_NYERI_PERUT",
+        "text": "Nyeri Perut",
+        "response": "Catat intensitas nyeri dan konsultasikan jika parah.",
+        "score": 1,
+        "matches": ["D06", "REC_REST_MEDICAL_CHECK"]
+      },
+      {
+        "optionId": "Q07_OPT_NYERI_DADA",
+        "text": "Nyeri Dada",
+        "response": "Segera periksa jika nyeri hebat atau sesak napas.",
+        "score": 1,
+        "matches": ["D07", "REC_REST_EMERGENCY"]
+      },
+      {
+        "optionId": "Q07_OPT_NONE",
         "text": "Tidak ada keluhan",
         "response": "Tubuh Bunda bekerja dengan baik hari ini.",
-        "score": 3
+        "score": 3,
+        "matches": []
       }
     ]
   },
@@ -172,19 +279,25 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q08_OPT_NONE",
         "text": "Tidak ada sama sekali",
         "response": "Yeay senang mendengarnya.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q08_OPT_SLIGHT",
         "text": "Sedikit bengkak",
         "response": "Istirahatkan areanya & jaga asupan cairan ya.",
-        "score": 2
+        "score": 2,
+        "matches": ["REC_REST_LEG_ELEVATE", "REC_HYDRATION_ADJUST", "H02"]
       },
       {
+        "optionId": "Q08_OPT_SEVERE",
         "text": "Sangat bengkak",
         "response": "Kesehatan Bunda prioritas, segera konsultasi.",
-        "score": 0
+        "score": 0,
+        "matches": ["D02", "REC_REST_MEDICAL_CHECK"]
       }
     ]
   },
@@ -195,24 +308,32 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q09_OPT_NONE",
         "text": "Tidak ada sama sekali",
         "response": "Janin aman & Bunda tetap nyaman.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q09_OPT_SPOT",
         "text": "Sedikit bercak",
         "response": "Catat & perhatikan tanda lainnya ya.",
-        "score": 2
+        "score": 2,
+        "matches": ["D01", "REC_REST_MONITOR"]
       },
       {
+        "optionId": "Q09_OPT_CLEAR",
         "text": "Tampak jelas, tidak banyak",
         "response": "Tetap waspada & konsultasikan ke dokter.",
-        "score": 1
+        "score": 1,
+        "matches": ["D03", "REC_REST_MEDICAL_CHECK"]
       },
       {
+        "optionId": "Q09_OPT_HEAVY",
         "text": "Keluar jumlah banyak",
         "response": "Segera ke dokter, kesehatan Bunda & janin penting.",
-        "score": 0
+        "score": 0,
+        "matches": ["D03", "REC_REST_EMERGENCY"]
       }
     ]
   },
@@ -223,24 +344,32 @@
     "allowMultiple": false,
     "options": [
       {
+        "optionId": "Q10_OPT_NORMAL",
         "text": "Terasa normal",
         "response": "Janin aktif & sehat.",
-        "score": 3
+        "score": 3,
+        "matches": []
       },
       {
+        "optionId": "Q10_OPT_LESS",
         "text": "Terasa, tapi lebih sedikit dari biasanya",
         "response": "Tetap pantau gerakan janin ya.",
-        "score": 1
+        "score": 1,
+        "matches": ["D10", "REC_REST_MONITOR"]
       },
       {
+        "optionId": "Q10_OPT_NONE",
         "text": "Tidak terasa gerakan",
         "response": "Periksa ke dokter untuk memastikan janin baik.",
-        "score": 0
+        "score": 0,
+        "matches": ["D10", "REC_REST_EMERGENCY"]
       },
       {
+        "optionId": "Q10_OPT_UNDER18",
         "text": "Kehamilan masih di bawah 18 minggu",
         "response": "Gerakan janin akan terasa seiring berjalan waktu",
-        "score": 2
+        "score": 2,
+        "matches": []
       }
     ]
   }

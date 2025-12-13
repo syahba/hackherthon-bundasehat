@@ -1,112 +1,286 @@
 [
   {
     "id": "H01",
-    "title": "Jahe untuk Redakan Mual & Pencernaan Ringan",
-    "summary": "Jahe segar membantu mual ringan. Minum 1–2 cangkir/hari.",
+    "title": "Jahe",
+    "function": "Untuk mengurangi mual",
+    "summary": "Jahe segar membantu menenangkan perut dan meredakan mual ringan pada ibu hamil. Minuman hangatnya nyaman diminum kapan saja.",
     "ingredients": ["2–3 iris jahe segar", "200–250 ml air panas"],
-    "preparation": "Rebus irisan jahe 5–10 menit; saring; minum hangat.",
-    "benefits": ["Mengurangi mual", "Mendukung pencernaan"],
-    "safetyNotes": "Aman 1–2 cangkir/hari; hindari jika riwayat gangguan pembekuan darah",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["mual", "muntah", "kembung"]
+    "preparation": [
+      "Iris atau memarkan jahe",
+      "Rebus dalam air selama 5–10 menit hingga aroma dan sari jahe keluar",
+      "Saring airnya; Minum hangat 1–2 kali sehari",
+      "Jika ingin rasa manis alami, bisa ditambahkan ½ sdt madu"
+    ],
+    "nutritions": [
+      "Gingerol: menenangkan lambung",
+      "Antioksidan: mendukung pencernaan dan kenyamanan perut"
+    ],
+    "benefits": [
+      "Mengurangi mual dan muntah ringan",
+      "Menenangkan perut yang kembung atau penuh",
+      "Mendukung pencernaan lebih nyaman",
+      "Memberi sensasi hangat dan menenangkan tubuh"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika memiliki riwayat gangguan pembekuan darah",
+      "Jangan dikonsumsi berlebihan untuk menghindari efek samping ringan seperti panas perut"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q07_OPT_MUAL"]
   },
   {
     "id": "H02",
-    "title": "Lemon untuk Hidrasi & Energi Ringan",
-    "summary": "Infused lemon membantu hidrasi dan memberi vitamin C ringan.",
-    "ingredients": ["1–2 iris lemon", "200–250 ml air hangat"],
-    "preparation": "Campur lemon dengan air hangat; minum segera.",
-    "benefits": ["Mendukung hidrasi", "Menambah energi"],
-    "safetyNotes": "Hindari jika GERD",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["dehidrasi", "haus", "hidrasi"]
+    "title": "Mentimun + Daun Mint",
+    "function": "Untuk mengurangi bengkak",
+    "summary": "Mentimun segar dan daun mint membantu menyegarkan tubuh dan mengurangi retensi cairan ringan. Minuman ini menenangkan dan membantu hidrasi.",
+    "ingredients": [
+      "4–5 iris mentimun",
+      "5–6 daun mint segar",
+      "200 ml air"
+    ],
+    "preparation": [
+      "Iris mentimun",
+      "Cuci daun mint",
+      "Masukkan keduanya ke dalam air",
+      "Diamkan selama 5–10 menit",
+      "Minum segar 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Vitamin C: menyegarkan tubuh",
+      "Antioksidan: membantu mengurangi bengkak",
+      "Minyak esensial mint: memberi aroma segar"
+    ],
+    "benefits": [
+      "Mengurangi bengkak ringan",
+      "Menyegarkan tubuh",
+      "Memberi sensasi segar dan nyaman"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 gelas/hari",
+      "Hindari jika alergi mint",
+      "Jangan diminum terlalu banyak agar tidak menimbulkan efek mual"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q08_OPT_SLIGHT", "Q05_OPT_LESS4"]
   },
   {
     "id": "H03",
-    "title": "Daun Mint untuk Redakan Perut Kembung",
-    "summary": "Seduh daun mint 5–7 menit; cocok untuk kembung ringan.",
-    "ingredients": ["5–7 daun mint", "200 ml air panas"],
-    "preparation": "Seduh 5–7 menit; saring; minum hangat atau dingin.",
-    "benefits": ["Meredakan kembung"],
-    "safetyNotes": "Hindari jika alergi mint",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["kembung", "perut kembung"]
+    "title": "Sereh",
+    "function": "Untuk merilekskan tubuh",
+    "summary": "Sereh memiliki aroma menenangkan yang sering digunakan sebagai teh herbal untuk meredakan stres dan membuat tubuh lebih rileks.",
+    "ingredients": [
+      "2–3 batang sereh segar",
+      "200 ml air panas"
+    ],
+    "preparation": [
+      "Memarkan batang sereh",
+      "Rebus dalam air selama 5–10 menit",
+      "Saring airnya; Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Minyak atsiri: memberi aroma menenangkan",
+      "Antioksidan: membantu relaksasi tubuh"
+    ],
+    "benefits": [
+      "Membuat tubuh lebih rileks",
+      "Meredakan stres ringan",
+      "Menenangkan pencernaan"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika sensitif terhadap aroma sereh"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q02_OPT_C", "Q06_OPT_LESS3"]
   },
   {
     "id": "H04",
-    "title": "Kunyit untuk Anti-Inflamasi Ringan & Energi",
-    "summary": "Kunyit hangat 1 cangkir/hari membantu nyeri ringan.",
-    "ingredients": ["½ sdt kunyit bubuk atau 1 cm kunyit", "200 ml air panas"],
-    "preparation": "Rebus 5 menit; saring; minum hangat.",
-    "benefits": ["Anti-inflamasi ringan", "Meringankan nyeri"],
-    "safetyNotes": "Aman 1 cangkir/hari; hindari jika gangguan pembekuan",
-    "trimester_safe": [2, 3],
-    "matches": ["nyeri", "inflamasi", "nyeri ringan"]
+    "title": "Daun Sirih",
+    "function": "Untuk hidrasi dan efek menenangkan",
+    "summary": "Daun sirih segar bisa diseduh untuk minuman hangat yang mendukung hidrasi tubuh dan memberikan efek menenangkan ringan.",
+    "ingredients": ["3–5 daun sirih segar", "200 ml air panas"],
+    "preparation":[
+      "Cuci daun sirih",
+      "Seduh dalam air panas selama 5–7 menit",
+      "Saring; Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Antioksidan: membantu hidrasi",
+      "Zat menenangkan ringan: memberi efek tenang"
+    ],
+    "benefits": [
+      "Mendukung hidrasi",
+      "Memberi efek menenangkan ringan",
+      "Menunjang kenyamanan tubuh"
+    ],
+    "safetyNotes": ["Aman 1–2 cangkir/hari", "Hindari jika sensitif terhadap daun sirih"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "H05",
-    "title": "Daun Sirih untuk Hidrasi & Antioksidan Ringan",
-    "summary": "Daun sirih dapat diseduh untuk efek menenangkan dan ringan.",
-    "ingredients": ["3–5 daun sirih", "200 ml air panas"],
-    "preparation": "Seduh 5–7 menit; saring; minum hangat.",
-    "benefits": ["Hidrasi", "Antioksidan ringan"],
-    "safetyNotes": "Hindari jika sensitif",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["hidrasi", "sirih", "antioksidan"]
+    "title": "Kunyit",
+    "function": "Untuk menjaga daya tahan tubuh",
+    "summary": "Kunyit adalah rimpang dengan warna kuning cerah yang banyak digunakan untuk meningkatkan kekebalan tubuh dan menjaga kesehatan secara umum.",
+    "ingredients": ["2–3 iris kunyit segar", "200 ml air panas"],
+    "preparation":[
+      "Iris kunyit",
+      "Rebus dalam air selama 5–10 menit",
+      "Saring airnya; Minum hangat 1–2 kali sehari",
+      "Bisa ditambahkan ½ sdt madu untuk rasa manis"
+    ],
+    "nutritions": [
+      "Kurkumin: mendukung kekebalan tubuh",
+      "Antioksidan: melawan radikal bebas"
+    ],
+    "benefits": [
+      "Menjaga daya tahan tubuh",
+      "Membantu tubuh tetap sehat",
+      "Memberi sensasi hangat"
+    ],
+    "safetyNotes": ["Aman 1–2 cangkir/hari", "Hindari konsumsi berlebihan untuk mencegah iritasi lambung"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "H06",
-    "title": "Pepaya Matang untuk Pencernaan & Energi",
-    "summary": "Pepaya matang membantu pencernaan dan energi ringan.",
-    "ingredients": ["2–3 potong pepaya matang"],
-    "preparation": "Makan segar atau diblender.",
-    "benefits": ["Mendukung pencernaan", "Memberi energi"],
-    "safetyNotes": "Hindari pepaya mentah",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["pepaya", "pencernaan"]
+    "title": "Daun Kelor",
+    "function": "Untuk nutrisi dan energi tambahan",
+    "summary": "Daun kelor kaya akan vitamin dan mineral yang mendukung energi, daya tahan tubuh, dan kesehatan ibu hamil secara umum.",
+    "ingredients": ["5–7 daun kelor segar", "200 ml air panas"],
+    "preparation": [
+      "Cuci daun kelor",
+      "Seduh dalam air panas selama 5–7 menit",
+      "Saring",
+      "Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Vitamin A: menunjang energi",
+      "Vitamin C: mendukung kekebalan",
+      "Mineral: menunjang kesehatan tubuh"
+    ],
+    "benefits": [
+      "Memberi nutrisi tambahan",
+      "Meningkatkan energi",
+      "Mendukung kesehatan tubuh dan ibu hamil"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari konsumsi berlebihan"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q01_OPT_C", "Q03_OPT_C"]
   },
   {
     "id": "H07",
-    "title": "Kurma untuk Energi & Nutrisi Tambahan",
-    "summary": "Kurma kaya serat dan gula alami; cocok sebagai camilan.",
-    "ingredients": ["2–3 buah kurma"],
-    "preparation": "Makan langsung atau campur susu hangat.",
-    "benefits": ["Energi cepat", "Serat"],
-    "safetyNotes": "1–2 buah/hari",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["kurma", "energi", "gula alami"]
+    "title": "Daun Salam",
+    "function": "Untuk meredakan kembung",
+    "summary": "Daun salam dapat diseduh sebagai minuman hangat untuk membantu pencernaan dan mengurangi perut kembung ringan.",
+    "ingredients": ["3–5 daun salam segar", "200 ml air panas"],
+    "preparation": [
+      "Cuci daun salam",
+      "Rebus dalam air selama 5–10 menit",
+      "Saring airnya",
+      "Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Minyak atsiri: membantu pencernaan",
+      "Antioksidan: mengurangi perut kembung"
+    ],
+    "benefits": [
+      "Meredakan perut kembung",
+      "Membantu pencernaan nyaman",
+      "Memberi efek hangat dan menenangkan"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika alergi daun salam"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "H08",
-    "title": "Teh Daun Pandan untuk Tenangkan Pikiran",
-    "summary": "Teh pandan membantu mood stabil dan relaksasi.",
-    "ingredients": ["3–5 helai daun pandan", "200 ml air panas"],
-    "preparation": "Seduh 5–7 menit; saring; minum hangat.",
-    "benefits": ["Relaksasi", "Menstabilkan mood"],
-    "safetyNotes": "Aman untuk kebanyakan orang",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["pandan", "mood", "relaksasi"]
+    "title": "Daun Raspberry",
+    "function": "Untuk menguatkan rahim pra-persalinan",
+    "summary": "Daun raspberry banyak digunakan oleh ibu hamil di trimester akhir untuk membantu persiapan rahim menjelang persalinan. Minum seduhan hangat memberi efek nyaman.",
+    "ingredients": ["3–5 daun raspberry kering atau segar", "200 ml air panas"],
+    "preparation": [
+      "Seduh daun raspberry dalam air panas selama 5–7 menit",
+      "Saring",
+      "Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Tanin: menenangkan rahim",
+      "Vitamin dan mineral: mendukung kesehatan rahim"
+    ],
+    "benefits": [
+      "Menguatkan rahim; Mendukung persiapan persalinan",
+      "Memberi efek nyaman saat diminum"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika memiliki kontraksi dini atau masalah kehamilan tertentu",
+      "Konsultasikan dengan bidan atau dokter sebelum rutin diminum"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "H09",
-    "title": "Daun Kelor untuk Nutrisi Tambahan",
-    "summary": "Daun kelor kaya vitamin & mineral; bisa dimasak atau diseduh.",
-    "ingredients": ["3–5 daun kelor", "200 ml air"],
-    "preparation": "Seduh atau masak sebagai sayur.",
-    "benefits": ["Vitamin & mineral"],
-    "safetyNotes": "Konsumsi sewajarnya",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["kelor", "nutrisi", "vitamin"]
+    "title": "Daun Pandan",
+    "function": "Untuk menenangkan pikiran dan mood",
+    "summary": "Daun pandan memiliki aroma khas yang menenangkan dan sering digunakan sebagai seduhan untuk relaksasi dan menenangkan suasana hati.",
+    "ingredients": ["3–4 daun pandan segar", "200 ml air panas"],
+    "preparation": [
+      "Cuci daun pandan",
+      "Seduh dalam air panas selama 5–7 menit",
+      "Saring",
+      "Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Minyak atsiri: memberi aroma menenangkan",
+      "Antioksidan: mendukung relaksasi"
+    ],
+    "benefits": [
+      "Menenangkan pikiran",
+      "Membantu mood lebih stabil",
+      "Memberi aroma segar dan nyaman"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika alergi daun pandan"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q02_OPT_B", "Q06_OPT_3_4"]
   },
   {
     "id": "H10",
-    "title": "Daun Kemangi untuk Relaksasi & Tenangkan Perut",
-    "summary": "Teh kemangi membantu relaksasi dan meredakan kembung.",
-    "ingredients": ["5–7 daun kemangi", "200 ml air panas"],
-    "preparation": "Seduh 5–7 menit; saring; minum hangat.",
-    "benefits": ["Relaksasi", "Mengurangi kembung"],
-    "safetyNotes": "Hindari jika sensitif aroma",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["kemangi", "relaksasi", "kembung"]
+    "title": "Daun Kemangi",
+    "function": "Untuk relaksasi dan menenangkan perut",
+    "summary": "Daun kemangi segar mudah ditemukan dan memiliki aroma khas yang menenangkan. Minum seduhan hangat membantu relaksasi dan meredakan perut kembung.",
+    "ingredients": ["5–7 daun kemangi segar", "200 ml air panas"],
+    "preparation": [
+      "Cuci daun kemangi",
+      "Seduh dalam air panas selama 5–7 menit",
+      "Saring",
+      "Minum hangat 1–2 kali sehari"
+    ],
+    "nutritions": [
+      "Minyak atsiri: memberi aroma menenangkan",
+      "Antioksidan: membantu kenyamanan perut"
+    ],
+    "benefits": [
+      "Membantu relaksasi",
+      "Menenangkan perut kembung",
+      "Memberi aroma segar dan nyaman"
+    ],
+    "safetyNotes": [
+      "Aman diminum 1–2 cangkir/hari",
+      "Hindari jika sensitif terhadap aroma kemangi"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   }
 ]

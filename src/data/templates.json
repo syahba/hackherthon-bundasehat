@@ -1,22 +1,32 @@
 {
-  "condition": {
-    "good": "Kondisi ibu dan janin terlihat baik hari ini. Tidak ada tanda bahaya yang signifikan.",
-    "warning": "Terdapat beberapa tanda yang perlu dipantau. Perhatikan rekomendasi dan konsultasikan bila tidak membaik.",
-    "bad": "Terdapat tanda bahaya. Segera hubungi fasilitas kesehatan."
+  "overall": {
+    "templates": [
+      "Bunda terlihat {energy_label}, dengan {symptom_list}. Kondisi saat ini {status_label}.",
+      "Terlihat {energy_label} dan terdapat keluhan: {symptom_list}. Status: {status_label}.",
+      "Secara umum Bunda {energy_label}; gejala utama: {symptom_list}; status: {status_label}."
+    ]
   },
   "nutrition": {
-    "good": "Nutrisi cukup dan seimbang hari ini.",
-    "warning": "Asupan perlu ditingkatkan, tambahkan variasi sayur dan sumber protein.",
-    "bad": "Asupan gizi kurang — segera konsultasikan dan perbaiki pola makan."
+    "templates": [
+      "Asupan: {nutrition_label}; rekomendasi: {nutrition_gaps}.",
+      "Nutrisi terlihat {nutrition_label}. Coba tambahkan: {nutrition_gaps}."
+    ]
   },
   "energy": {
-    "good": "Energi dan tidur cukup.",
-    "warning": "Energi sedikit menurun. Istirahat lebih banyak dan teknik relaksasi direkomendasikan.",
-    "bad": "Energi sangat rendah. Prioritaskan istirahat dan pertimbangkan konsultasi."
+    "templates": [
+      "Tidur & mood: {energy_label}. Rekomendasi: {energy_actions}.",
+      "Energi Bunda {energy_label}; saran: {energy_actions}."
+    ]
   },
   "pain": {
-    "good": "Tidak ada keluhan signifikan.",
-    "warning": "Ada keluhan ringan yang perlu dipantau.",
-    "bad": "Keluhan serius — segera temui tenaga kesehatan."
+    "templates": [
+      "Keluhan yang terdeteksi: {pain_list}. Tidak ada tanda bahaya berat: {safe_note}.",
+      "Keluhan: {pain_list}. Perhatikan: {pain_flags}."
+    ]
+  },
+  "doctorAdvice": {
+    "aman": "Bunda aman, tetap jaga kesehatan dan rutin cek ya.",
+    "waspada": "Bunda perlu menemui dokter dalam 3-7 hari ke depan jika gejala berlanjut.",
+    "bahaya": "Segera periksa ke dokter dalam 24 jam, Bunda."
   }
 }

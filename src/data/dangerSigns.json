@@ -2,17 +2,7 @@
   {
     "id": "D01",
     "title": "Bercak Bertambah Banyak",
-    "summary": "Bercak (spotting) yang bertambah banyak dapat menandakan kondisi serius.",
-    "overview": "Bercak makin banyak / merah terang; Nyeri perut bawah/kram; Gumpalan darah; Pusing atau lemas; Bau tidak normal; Gerakan janin berkurang",
-    "causes": [
-      "Iritasi serviks",
-      "Perdarahan implantasi",
-      "Infeksi vagina/serviks",
-      "Keguguran",
-      "Plasenta previa",
-      "Ketuban pecah dini",
-      "Kehamilan ektopik"
-    ],
+    "summary": "Bercak yang bertambah banyak dapat menandakan kondisi serius.",
     "management": [
       "Istirahat",
       "Gunakan pembalut untuk memantau",
@@ -29,22 +19,14 @@
       "Kelahiran prematur"
     ],
     "urgency": "Segera ke faskes jika: Darah mengalir banyak, Nyeri kuat, Gumpalan, Pusing, Gerakan janin berkurang",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["bercak", "perdarahan", "darah", "spotting"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q09_OPT_SPOT", "Q09_OPT_CLEAR", "Q09_OPT_HEAVY"],
     "severity": "critical"
   },
   {
     "id": "D02",
     "title": "Bengkak Berlebihan",
     "summary": "Bengkak tiba-tiba atau ekstrem bisa menjadi tanda pre-eklampsia.",
-    "overview": "Bengkak di tangan, wajah, kaki; Nyeri kepala; Peningkatan berat badan drastis; Mata sembab; Nyeri perut atas; Pusing",
-    "causes": [
-      "Retensi cairan",
-      "Tekanan darah tinggi",
-      "Pre-eklampsia",
-      "Infeksi",
-      "Gangguan ginjal atau hati"
-    ],
     "management": [
       "Istirahat",
       "Angkat kaki saat duduk",
@@ -60,22 +42,14 @@
       "Kelahiran prematur"
     ],
     "urgency": "Segera ke faskes jika: Bengkak tiba-tiba, Nyeri kepala parah, Penglihatan kabur, Tekanan darah tinggi",
-    "trimester_safe": [2, 3],
-    "matches": ["bengkak", "pembengkakan", "edema"],
+    "trimesterSafe": [2, 3],
+    "matches": ["Q08_OPT_SEVERE", "Q07_OPT_PUSING"],
     "severity": "critical"
   },
   {
     "id": "D03",
     "title": "Pendarahan / Cairan Berlebihan",
     "summary": "Keluarnya darah atau cairan dari vagina bisa menandakan komplikasi kehamilan.",
-    "overview": "Cairan encer atau berwarna merah; Bau tidak normal; Gumpalan darah; Rasa nyeri; Penurunan gerakan janin",
-    "causes": [
-      "Ketuban pecah dini",
-      "Plasenta previa",
-      "Infeksi",
-      "Keguguran",
-      "Kehamilan ektopik"
-    ],
     "management": [
       "Istirahat",
       "Catat warna dan jumlah",
@@ -91,21 +65,14 @@
       "Kelahiran prematur"
     ],
     "urgency": "Segera ke faskes jika: Darah banyak, Gumpalan, Bau tidak normal, Nyeri hebat, Gerakan janin berkurang",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["perdarahan", "cairan", "ketuban", "darah", "bocor"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q09_OPT_CLEAR", "Q09_OPT_HEAVY"],
     "severity": "critical"
   },
   {
     "id": "D04",
     "title": "Mual / Muntah Parah",
     "summary": "Muntah terus-menerus bisa menyebabkan dehidrasi dan gangguan elektrolit.",
-    "overview": "Muntah lebih dari 3x sehari; Sulit makan/minum; Berat badan turun; Lemas; Pusing",
-    "causes": [
-      "Hormon kehamilan (HCG tinggi)",
-      "Dehidrasi",
-      "Infeksi",
-      "Gangguan pencernaan"
-    ],
     "management": [
       "Minum air sedikit tapi sering",
       "Konsumsi makanan ringan",
@@ -120,16 +87,14 @@
       "Berat janin rendah"
     ],
     "urgency": "Segera ke faskes jika: Muntah terus-menerus, Tidak bisa minum, Lemas hebat",
-    "trimester_safe": [1, 2],
-    "matches": ["mual", "muntah", "dehidrasi", "sulit makan"],
+    "trimesterSafe": [1, 2],
+    "matches": ["Q07_OPT_MUAL"],
     "severity": "moderate"
   },
   {
     "id": "D05",
     "title": "Pusing / Pingsan",
     "summary": "Pusing terus-menerus atau pingsan bisa menandakan anemia atau masalah lain.",
-    "overview": "Lemas; Mata berkunang; Pingsan; Detak jantung cepat; Sesak napas",
-    "causes": ["Tekanan darah rendah", "Anemia", "Dehidrasi", "Hipoglikemia"],
     "management": [
       "Duduk/berbaring saat pusing",
       "Minum air",
@@ -138,21 +103,14 @@
     ],
     "impact": ["Cedera akibat jatuh", "Gangguan sirkulasi"],
     "urgency": "Segera periksa jika pingsan, detak jantung tidak normal, atau sesak napas",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["pusing", "pingsan", "lemas", "sinkop"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q07_OPT_PUSING"],
     "severity": "moderate"
   },
   {
     "id": "D06",
     "title": "Nyeri Perut Hebat",
     "summary": "Nyeri perut hebat bisa menandakan keguguran, ektopik atau kontraksi dini.",
-    "overview": "Nyeri tajam/perut bagian bawah; Muntah; Pendarahan; Demam; Gerakan janin berkurang",
-    "causes": [
-      "Keguguran",
-      "Kehamilan ektopik",
-      "Kontraksi prematur",
-      "Infeksi saluran kemih"
-    ],
     "management": [
       "Istirahat",
       "Hindari aktivitas berat",
@@ -162,16 +120,14 @@
     ],
     "impact": ["Keguguran", "Kelahiran prematur", "Infeksi"],
     "urgency": "Segera ke faskes jika: Nyeri hebat, Pendarahan, Muntah",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["nyeri perut", "kontraksi", "kram", "nyeri bawah"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q07_OPT_NYERI_PERUT"],
     "severity": "critical"
   },
   {
     "id": "D07",
     "title": "Nyeri Dada / Sesak Napas",
     "summary": "Nyeri dada atau sesak napas bisa menandakan kondisi jantung/paru serius.",
-    "overview": "Nyeri dada; Sesak; Detak jantung cepat; Pusing; Keringat dingin",
-    "causes": ["Masalah jantung", "Emboli paru", "Pre-eklampsia"],
     "management": [
       "Istirahat",
       "Duduk tegak",
@@ -180,34 +136,35 @@
     ],
     "impact": ["Serangan jantung", "Emboli", "Bahaya bagi ibu dan janin"],
     "urgency": "Segera ke faskes jika nyeri hebat atau sesak napas",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["nyeri dada", "sesak", "napas pendek"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q07_OPT_NYERI_DADA"],
     "severity": "critical"
   },
   {
     "id": "D08",
     "title": "Demam Tinggi",
     "summary": "Demam tinggi dapat menandakan infeksi serius yang membahayakan ibu dan janin.",
-    "overview": "Suhu >38°C; Menggigil; Nyeri tubuh; Mual/muntah; Lemas",
-    "causes": ["Infeksi virus/bakteri", "Infeksi saluran kemih", "Flu berat"],
     "management": [
       "Minum banyak air",
       "Istirahat",
       "Pantau suhu",
       "Hubungi nakes jika tinggi terus"
     ],
-    "impact": ["Infeksi parah", "Dehidrasi", "Kelahiran prematur"],
+    "impact": [
+      "Infeksi parah",
+      "Dehidrasi",
+      "Gangguan janin",
+      "Kelahiran prematur"
+    ],
     "urgency": "Segera jika suhu >38°C dan tidak turun atau tidak bisa minum",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["demam", "suhu tinggi", "fever"],
+    "trimesterSafe": [1, 2, 3],
+    "matches": [],
     "severity": "moderate"
   },
   {
     "id": "D09",
     "title": "Gangguan Penglihatan",
     "summary": "Gangguan penglihatan saat hamil bisa menandakan pre-eklampsia.",
-    "overview": "Penglihatan kabur; Bintik hitam; Nyeri kepala; Sensitif cahaya; Mual",
-    "causes": ["Tekanan darah tinggi", "Pre-eklampsia", "Migrain berat"],
     "management": [
       "Istirahat",
       "Pantau tekanan darah",
@@ -215,20 +172,14 @@
     ],
     "impact": ["Pre-eklampsia", "Risiko kejang"],
     "urgency": "Segera ke faskes jika penglihatan kabur mendadak atau nyeri kepala hebat",
-    "trimester_safe": [2, 3],
-    "matches": ["penglihatan", "kabur", "blur", "bintik"],
+    "trimesterSafe": [2, 3],
+    "matches": [],
     "severity": "critical"
   },
   {
     "id": "D10",
     "title": "Gerakan Janin Berkurang",
     "summary": "Gerakan janin menurun bisa menandakan stres janin atau masalah plasenta.",
-    "overview": "Perubahan jumlah tendangan/gerakan; janin lebih pasif; tidak ada tendangan biasanya",
-    "causes": [
-      "Stres janin",
-      "Kekurangan cairan ketuban",
-      "Komplikasi plasenta"
-    ],
     "management": [
       "Pantau gerakan harian",
       "Minum air",
@@ -237,8 +188,8 @@
     ],
     "impact": ["Hipoksia janin", "Risiko kematian janin"],
     "urgency": "Segera ke faskes jika tidak ada gerakan >12 jam atau berkurang drastis",
-    "trimester_safe": [2, 3],
-    "matches": ["gerakan", "tidak terasa", "kurang gerakan", "tendangan"],
+    "trimesterSafe": [2, 3],
+    "matches": ["Q10_OPT_LESS", "Q10_OPT_NONE"],
     "severity": "critical"
   }
 ]

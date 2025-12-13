@@ -2,101 +2,317 @@
   {
     "id": "N01",
     "title": "Sayur Bening Bayam dan Jagung",
-    "summary": "Sup sayur bening dengan bayam dan jagung, kaya zat besi dan vitamin.",
-    "ingredients": ["bayam", "jagung", "bawang merah", "bawang putih"],
-    "benefits": ["zat besi", "vitamin A", "vitamin C", "serat"],
-    "preparation": "Tumis bawang, rebus jagung, tambah bayam hingga layu.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["bayam", "zat besi", "anemia", "sayur"]
+    "function": "Untuk perkembangan saraf Janin",
+    "summary": "Sup sayur bening segar dengan bayam dan jagung manis, ringan di perut dan cocok untuk ibu hamil yang membutuhkan zat besi dan vitamin untuk mendukung perkembangan janin.",
+    "ingredients": [
+      "Bayam segar",
+      "Jagung manis",
+      "Bawang merah",
+      "Bawang putih",
+      "Garam",
+      "Air Bersih"
+    ],
+    "preparation": [
+      "Tumis bawang merah & bawang putih hingga harum",
+      "Rebus air, masukkan jagung, masak sebentar",
+      "Tambahkan bayam, masak hingga layu",
+      "Sajikan hangat"
+    ],
+    "nutritions": [
+      "Zat besi",
+      "Vitamin A",
+      "Vitamin C",
+      "Serat",
+      "Antioksidan"
+    ],
+    "benefits": [
+      "Mencegah anemia pada ibu hamil",
+      "Mendukung perkembangan saraf janin",
+      "Menjaga kesehatan pencernaan"
+    ],
+    "safetyNotes": [
+      "Cuci sayur bersih",
+      "Jangan memasak bayam terlalu lama agar vitamin tidak hilang"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q03_OPT_B", "Q04_OPT_SAYUR"]
   },
   {
     "id": "N02",
     "title": "Nasi Goreng Merah Telur Kecap",
-    "summary": "Nasi goreng bergizi dengan telur untuk energi stabil.",
-    "ingredients": ["nasi", "telur", "kecap manis", "bawang merah"],
-    "benefits": ["karbohidrat kompleks", "protein", "vitamin B"],
-    "preparation": "Tumis bumbu, masukkan nasi, tambah telur hingga matang.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["nasi goreng", "protein", "energi"]
+    "function": "Untuk sumber energi utama Bunda",
+    "summary": "Nasi goreng bergizi dengan warna merah alami dari bumbu dan telur, cocok sebagai sarapan atau makan siang untuk memberikan energi stabil bagi ibu hamil.",
+    "ingredients": [
+      "Nasi matang",
+      "Telur",
+      "Kecap manis",
+      "Bawang merah",
+      "Bawang putih",
+      "Cabe merah",
+      "Minyak goreng"
+    ],
+    "preparation": [
+      "Tumis bawang dan cabe hingga harum",
+      "Masukkan nasi, aduk rata",
+      "Tambahkan telur dan kecap manis",
+      "Masak hingga matang",
+      "Sajikan hangat"
+    ],
+    "nutritions": [
+      "Karbohidrat kompleks",
+      "Protein",
+      "Lemak sehat",
+      "Vitamin B kompleks"
+    ],
+    "benefits": [
+      "Memberikan energi utama ibu hamil",
+      "Menjaga stamina",
+      "Mendukung pertumbuhan janin"
+    ],
+    "safetyNotes": [
+      "Pastikan telur matang sempurna untuk menghindari bakteri",
+      "Batasi konsumsi minyak berlebihan agar tidak terlalu berat untuk pencernaan"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q03_OPT_D", "Q04_OPT_TELUR"]
   },
   {
     "id": "N03",
     "title": "Tumis Daun Katuk dan Labu Siam",
-    "summary": "Sayur tumis kaya kalsium dan vitamin untuk tulang dan janin.",
-    "ingredients": ["daun katuk", "labu siam", "bawang"],
-    "benefits": ["kalsium", "vitamin A", "serat"],
-    "preparation": "Tumis bawang, masak labu dan tambahkan daun katuk.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["katuk", "kalsium", "tulang"]
+    "function": "Untuk menguatkan tulang Bunda & Janin",
+    "summary": "Sayur tumis sederhana kaya kalsium dan vitamin, rasa gurih dan lembut, mudah dikonsumsi, membantu pemenuhan nutrisi untuk tulang ibu dan janin.",
+    "ingredients": [
+      "Daun katuk segar",
+      "Labu siam",
+      "Bawang merah",
+      "Bawang putih",
+      "Minyak goreng",
+      "Garam secukupnya"
+    ],
+    "preparation": [
+      "Tumis bawang hingga harum",
+      "Masukkan labu siam, masak sebentar",
+      "Tambahkan daun katuk, aduk hingga layu",
+      "Sajikan hangat"
+    ],
+    "nutritions": ["Kalsium", "Vitamin A", "Vitamin C", "Serat"],
+    "benefits": [
+      "Menguatkan tulang dan gigi ibu serta janin",
+      "Mendukung pembentukan sel darah merah",
+      "Menjaga kesehatan mata"
+    ],
+    "safetyNotes": [
+      "Jangan memasak daun katuk terlalu lama agar nutrisi tetap optimal"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "N04",
-    "title": "Pindang Bandeng Kuah Kuning",
-    "summary": "Ikan bandeng sumber protein & omega-3 untuk pertumbuhan janin.",
-    "ingredients": ["ikan bandeng", "kunyit", "bumbu"],
-    "benefits": ["protein", "omega-3"],
-    "preparation": "Rebus ikan dengan bumbu kuning dan sajikan.",
-    "trimester_safe": [2, 3],
-    "matches": ["ikan", "protein", "omega"]
+    "title": "Ikan Bandeng Kuah Kuning",
+    "function": "Untuk pertumbuhan sel Janin",
+    "summary": "Ikan bandeng dimasak dengan bumbu kunyit menjadi kuah kuning bergizi. Rasa gurih dan lembut mudah dikonsumsi. Cocok sebagai sumber protein dan omega-3 untuk ibu hamil.",
+    "ingredients": [
+      "Ikan bandeng",
+      "Kunyit",
+      "Bawang merah",
+      "Bawang putih",
+      "Air",
+      "Garam"
+    ],
+    "preparation": [
+      "Rebus ikan dengan bumbu kunyit, bawang, dan garam hingga matang",
+      "Sajikan hangat dengan kuah bening"
+    ],
+    "nutritions": ["Protein", "Omega-3", "Kalsium"],
+    "benefits": [
+      "Mendukung perkembangan sel janin",
+      "Menjaga kesehatan otot dan tulang ibu",
+      "Memberi nutrisi penting untuk pertumbuhan janin"
+    ],
+    "safetyNotes": [
+      "Pastikan ikan bersih dan matang sempurna",
+      "Hilangkan duri halus agar aman dikonsumsi"
+    ],
+    "trimesterSafe": [2, 3],
+    "matches": ["Q04_OPT_IKAN"]
   },
   {
     "id": "N05",
     "title": "Sup Kacang Hijau",
-    "summary": "Sup kacang hijau untuk serat, protein, dan pencegahan sembelit.",
-    "ingredients": ["kacang hijau", "gula merah", "air"],
-    "benefits": ["protein", "serat", "zat besi"],
-    "preparation": "Rebus kacang hijau hingga empuk; tambahkan gula merah.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["kacang hijau", "sembelit"]
+    "function": "Untuk penambahan berat badan sehat",
+    "summary": "Sup manis dari kacang hijau yang lembut. Cocok sebagai camilan bergizi atau sarapan untuk ibu hamil.",
+    "ingredients": ["Kacang hijau", "Gula merah", "Air", "Daun pandan"],
+    "preparation": [
+      "Rebus kacang hijau hingga empuk",
+      "Tambahkan gula merah dan daun pandan",
+      "Masak hingga matang",
+      "Sajikan hangat atau dingin"
+    ],
+    "nutritions": ["Protein", "Serat", "Zat besi", "Karbohidrat"],
+    "benefits": [
+      "Mencegah sembelit",
+      "Mendukung penambahan berat badan sehat",
+      "Menjaga energi ibu hamil"
+    ],
+    "safetyNotes": [
+      "Pastikan kacang hijau matang sempurna untuk menghindari gangguan pencernaan",
+      "Batasi gula merah agar tidak berlebihan dan aman bagi kadar gula ibu"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q03_OPT_C"]
   },
   {
     "id": "N06",
     "title": "Pepes Tahu Ikan Teri",
-    "summary": "Pepes kukus kaya kalsium, protein, dan mudah dicerna.",
-    "ingredients": ["tahu", "ikan teri", "bumbu"],
-    "benefits": ["kalsium", "protein", "vitamin B"],
-    "preparation": "Bungkus campuran dengan daun pisang; kukus hingga matang.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["tahu", "ikan teri", "kalsium"]
+    "function": "Untuk pembentukan tulang dan gigi Janin",
+    "summary": "Pepes kukus berbahan tahu dan ikan teri yang kaya kalsium, gurih dan mudah dicerna. Cocok untuk ibu hamil.",
+    "ingredients": [
+      "Tahu",
+      "Ikan teri",
+      "Bawang merah",
+      "Bawang putih",
+      "Daun pisang",
+      "Garam secukupnya"
+    ],
+    "preparation": [
+      "Haluskan bumbu",
+      "Campur tahu dan ikan teri",
+      "Bungkus dengan daun pisang",
+      "Kukus hingga matang"
+    ],
+    "nutritions": ["Kalsium", "Protein", "Vitamin B"],
+    "benefits": [
+      "Mendukung pembentukan tulang dan gigi Janin",
+      "Menjaga kesehatan tulang Bunda"
+    ],
+    "safetyNotes": [
+      "Pastikan ikan teri bersih dan tahu matang sempurna",
+      "Hindari penggunaan daun pisang yang sudah layu atau berlubang"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q04_OPT_AYAM", "Q04_OPT_TAHUTEMPE"]
   },
   {
     "id": "N07",
     "title": "Lodeh Kacang Panjang dan Tempe",
-    "summary": "Lodeh bergizi dengan protein nabati dan serat.",
-    "ingredients": ["kacang panjang", "tempe", "santan", "bumbu"],
-    "benefits": ["protein nabati", "serat", "vitamin B"],
-    "preparation": "Tumis, masukkan santan dan kacang panjang; masak hingga matang.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["tempe", "kacang panjang", "protein nabati"]
+    "function": "Untuk menjaga kesehatan pencernaan",
+    "summary": "Sayur lodeh gurih dari kacang panjang dan tempe, kaya serat dan protein nabati. Membantu pencernaan ibu hamil.",
+    "ingredients": [
+      "Kacang panjang",
+      "Tempe",
+      "Santan",
+      "Bawang merah",
+      "Bawang putih",
+      "Cabai"
+    ],
+    "preparation": [
+      "Tumis bawang hingga harum",
+      "Masukkan kacang panjang dan tempe",
+      "Tambahkan santan",
+      "Masak hingga matang"
+    ],
+    "nutritions": ["Protein nabati", "Serat", "Kalsium", "Vitamin B"],
+    "benefits": [
+      "Menjaga kesehatan pencernaan",
+      "Mendukung pertumbuhan janin",
+      "Menjaga energi Bunda"
+    ],
+    "safetyNotes": [
+      "Gunakan santan segar",
+      "Masak hingga matang sempurna",
+      "Jangan terlalu lama memasak agar nutrisi tetap optimal"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q04_OPT_TAHUTEMPE"]
   },
   {
     "id": "N08",
-    "title": "Ubi Jalar Rebus/Kukus",
-    "summary": "Ubi jalar sebagai sumber energi stabil dan serat.",
-    "ingredients": ["ubi jalar"],
-    "benefits": ["karbohidrat kompleks", "serat"],
-    "preparation": "Rebus atau kukus ubi hingga empuk.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["ubi", "energi", "lapar"]
+    "title": "Ubi Jalar Kukus",
+    "function": "Untuk mengatasi rasa lapar berlebih",
+    "summary": "Ubi jalar rebus atau kukus yang lembut, mudah dicerna. Memberikan energi stabil bagi ibu hamil.",
+    "ingredients": ["Ubi jalar segar", "Air", "Garam secukupnya"],
+    "preparation": ["Rebus atau kukus ubi hingga empuk", "Sajikan hangat"],
+    "nutritions": ["Karbohidrat kompleks", "Serat", "Vitamin A", "Mineral"],
+    "benefits": [
+      "Memberikan energi stabil",
+      "Mengatasi rasa lapar berlebih",
+      "Mendukung pertumbuhan janin"
+    ],
+    "safetyNotes": [
+      "Cuci ubi bersih sebelum dimasak",
+      "Pastikan matang sempurna",
+      "Hindari konsumsi berlebihan agar perut tidak kembung"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q03_OPT_C", "Q04_OPT_BIJIBIJIAN"]
   },
   {
     "id": "N09",
     "title": "Sayur Asem Sederhana",
-    "summary": "Sayur asem kaya vitamin dan serat untuk imun dan pencernaan.",
-    "ingredients": ["kacang panjang", "labu siam", "jagung", "asam jawa"],
-    "benefits": ["vitamin C", "serat", "antioksidan"],
-    "preparation": "Rebus sayuran dengan asam jawa; sajikan hangat.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["sayur asem", "imun", "serat"]
+    "function": "Untuk meningkatkan daya tahan tubuh",
+    "summary": "Sayur asem segar dengan rasa asam dan manis alami, kaya vitamin dan serat. Meningkatkan imun tubuh ibu hamil.",
+    "ingredients": [
+      "Kacang panjang",
+      "Labu siam",
+      "Jagung",
+      "Asam jawa",
+      "Daun melinjo",
+      "Bawang merah",
+      "Bawang putiha"
+    ],
+    "preparation": [
+      "Rebus air",
+      "Masukkan bawang dan sayuran",
+      "Masak hingga matang",
+      "Tambahkan asam jawa",
+      "Sajikan hangat"
+    ],
+    "nutritions": ["Vitamin C", "Serat", "Antioksidan", "Mineral"],
+    "benefits": [
+      "Meningkatkan daya tahan tubuh",
+      "Menjaga pencernaan",
+      "Membantu hidrasi"
+    ],
+    "safetyNotes": [
+      "Pastikan sayuran matang",
+      "Jangan terlalu banyak asam agar lambung tidak iritasi"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": []
   },
   {
     "id": "N10",
     "title": "Omelet Sayur Wortel & Bayam",
-    "summary": "Omelet gizi seimbang dengan protein, vitamin, dan serat.",
-    "ingredients": ["telur", "wortel", "bayam"],
-    "benefits": ["protein", "vitamin A", "zat besi"],
-    "preparation": "Campur sayur dengan telur; masak hingga matang.",
-    "trimester_safe": [1, 2, 3],
-    "matches": ["omelet", "telur", "protein"]
+    "function": "Untuk kesehatan mata dan tulang Janin",
+    "summary": "Omelet lembut yang kaya warna dan gizi, memadukan wortel dan bayam. Cocok untuk sarapan atau camilan bergizi ibu hamil yang ingin asupan vitamin dan protein seimbang.",
+    "ingredients": [
+      "Telur",
+      "Wortel parut",
+      "Bayam cincang",
+      "Bawang merah",
+      "Garam",
+      "Merica",
+      "Minyak goreng secukupnya"
+    ],
+    "preparation": [
+      "Kocok telur dengan garam dan merica",
+      "Tumis bawang hingga harum",
+      "Masukkan wortel dan bayam sebentar",
+      "Tuang telur, masak dengan api kecil hingga matang",
+      "Lipat omelet dan sajikan hangat"
+    ],
+    "nutritions": ["Protein", "Vitamin A", "Vitamin C", "Zat besi", "Serat"],
+    "benefits": [
+      "Mendukung kesehatan mata dan tulang Janin",
+      "Menjaga stamina Bunda",
+      "Membantu pencernaan"
+    ],
+    "safetyNotes": [
+      "Pastikan telur matang sempurna untuk menghindari bakteri",
+      "Cuci sayuran bersih sebelum digunakan"
+    ],
+    "trimesterSafe": [1, 2, 3],
+    "matches": ["Q03_OPT_B", "Q04_OPT_TELUR"]
   }
 ]
