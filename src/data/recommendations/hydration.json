@@ -1,27 +1,27 @@
 [
   {
     "id": "REC_HYDRATION_INCREASE",
-    "item": "Perbanyak minum hingga 7-8 gelas sehari",
+    "title": "Perbanyak minum hingga 7-8 gelas sehari",
     "type": "hydration"
   },
   {
     "id": "REC_HYDRATION_MAINTAIN",
-    "item": "Jaga konsumsi air 4-6 gelas jika aktivitas ringan",
+    "title": "Jaga konsumsi air 4-6 gelas jika aktivitas ringan",
     "type": "hydration"
   },
   {
     "id": "REC_HYDRATION_ELECTROLYTE",
-    "item": "Tambahkan minuman elektrolit jika muntah terus-menerus",
+    "title": "Tambahkan minuman elektrolit jika muntah terus-menerus",
     "type": "hydration"
   },
   {
     "id": "REC_HYDRATION_SMALL_SIP",
-    "item": "Minum sedikit namun sering jika mual",
+    "title": "Minum sedikit namun sering jika mual",
     "type": "hydration"
   },
   {
     "id": "REC_HYDRATION_INFUSED",
-    "item": "Coba infused lemon atau mentimun untuk variasi hidrasi",
+    "title": "Coba infused lemon atau mentimun untuk variasi hidrasi",
     "type": "hydration"
   }
 ]

@@ -8,21 +8,6 @@ export function calculatePregnancyWeek(registeredWeek, registeredDate) {
   return Math.max(0, registeredWeek + addedWeeks);
 }
 
-// detect if the pregnancy week should update (on app open)
-export function shouldUpdatePregnancyWeek(profile) {
-  if (!profile) return false;
-  const newWeek = calculatePregnancyWeek(profile.registeredWeek, profile.registeredDate);
-  return newWeek !== profile.currentWeek;
-}
-
-// return updated profile object with currentWeek refreshed
-export function applyPregnancyWeekUpdate(profile) {
-  return {
-    ...profile,
-    currentWeek: calculatePregnancyWeek(profile.registeredWeek, profile.registeredDate),
-  };
-}
-
 // streak logic
 export function updateStreak(lastCheckDate, currentStreak) {
   if (!lastCheckDate) return 1;

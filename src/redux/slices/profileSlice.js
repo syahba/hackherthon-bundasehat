@@ -38,7 +38,9 @@ const profileSlice = createSlice({
             state.data.registeredDate,
             state.data.registeredWeek
           );
-        } catch {}
+        } catch (err) {
+          console.log(err)
+        }
       }
       saveToStorage(state.data);
     },

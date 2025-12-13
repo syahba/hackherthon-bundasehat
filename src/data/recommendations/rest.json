@@ -1,37 +1,37 @@
 [
   {
     "id": "REC_REST_SLEEPHYGIENE",
-    "item": "Perbaiki rutinitas tidur: matikan layar 1 jam sebelum tidur",
+    "title": "Perbaiki rutinitas tidur: matikan layar 1 jam sebelum tidur",
     "type": "rest"
   },
   {
     "id": "REC_REST_SHORTNAP",
-    "item": "Power nap 20 menit setelah makan siang",
+    "title": "Power nap 20 menit setelah makan siang",
     "type": "rest"
   },
   {
     "id": "REC_REST_LEG_ELEVATE",
-    "item": "Angkat kaki saat duduk untuk kurangi bengkak",
+    "title": "Angkat kaki saat duduk untuk kurangi bengkak",
     "type": "rest"
   },
   {
     "id": "REC_REST_LIE_DOWN",
-    "item": "Berbaring saat pusing sampai merasa stabil",
+    "title": "Berbaring saat pusing sampai merasa stabil",
     "type": "rest"
   },
   {
     "id": "REC_REST_MONITOR",
-    "item": "Pantau gejala 24 jam; catat intensitas",
+    "title": "Pantau gejala 24 jam; catat intensitas",
     "type": "rest"
   },
   {
     "id": "REC_REST_MEDICAL_CHECK",
-    "item": "Konsultasi ke fasilitas kesehatan untuk pemeriksaan lanjutan",
+    "title": "Konsultasi ke fasilitas kesehatan untuk pemeriksaan lanjutan",
     "type": "rest"
   },
   {
     "id": "REC_REST_EMERGENCY",
-    "item": "Segera ke fasilitas kesehatan terdekat",
+    "title": "Segera ke fasilitas kesehatan terdekat",
     "type": "rest"
   }
 ]

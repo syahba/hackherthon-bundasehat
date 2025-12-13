@@ -1,3 +1,4 @@
+// Format Date to YYYY-MM-DD
 export function formatISODate(d) {
   const iso = new Date(d).toISOString();
   return iso.slice(0, 10);

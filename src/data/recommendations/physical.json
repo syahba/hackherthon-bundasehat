@@ -1,27 +1,27 @@
 [
   {
     "id": "REC_PHYS_STRETCH",
-    "item": "Lakukan peregangan ringan 5-10 menit sebelum tidur",
+    "title": "Lakukan peregangan ringan 5-10 menit sebelum tidur",
     "type": "physical"
   },
   {
     "id": "REC_PHYS_WALK",
-    "item": "Jalan santai 15 menit setelah makan",
+    "title": "Jalan santai 15 menit setelah makan",
     "type": "physical"
   },
   {
     "id": "REC_PHYS_PELVIC",
-    "item": "Latihan dasar panggul (pelvic tilt) 5 menit",
+    "title": "Latihan dasar panggul (pelvic tilt) 5 menit",
     "type": "physical"
   },
   {
     "id": "REC_PHYS_LIFT_HELP",
-    "item": "Hindari angkat berat; minta bantuan",
+    "title": "Hindari angkat berat; minta bantuan",
     "type": "physical"
   },
   {
     "id": "REC_PHYS_BREATH_EX",
-    "item": "Latihan napas untuk relaksasi otot",
+    "title": "Latihan napas untuk relaksasi otot",
     "type": "physical"
   }
 ]

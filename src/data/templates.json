@@ -1,29 +1,8 @@
 {
-  "overall": {
-    "templates": [
-      "Bunda terlihat {energy_label}, dengan {symptom_list}. Kondisi saat ini {status_label}.",
-      "Terlihat {energy_label} dan terdapat keluhan: {symptom_list}. Status: {status_label}.",
-      "Secara umum Bunda {energy_label}; gejala utama: {symptom_list}; status: {status_label}."
-    ]
-  },
-  "nutrition": {
-    "templates": [
-      "Asupan: {nutrition_label}; rekomendasi: {nutrition_gaps}.",
-      "Nutrisi terlihat {nutrition_label}. Coba tambahkan: {nutrition_gaps}."
-    ]
-  },
-  "energy": {
-    "templates": [
-      "Tidur & mood: {energy_label}. Rekomendasi: {energy_actions}.",
-      "Energi Bunda {energy_label}; saran: {energy_actions}."
-    ]
-  },
-  "pain": {
-    "templates": [
-      "Keluhan yang terdeteksi: {pain_list}. Tidak ada tanda bahaya berat: {safe_note}.",
-      "Keluhan: {pain_list}. Perhatikan: {pain_flags}."
-    ]
-  },
+  "overallCondition": "Kondisi harian: {{q1}}, {{q2}}. Nutrisi: {{q3}}, {{q5}}. Keluhan utama: {{q7List}}. Tanda fisik: {{q8}}, {{q9}}.",
+  "nutritionBalance": "Pola makan hari ini {{q3}}. Bunda mengonsumsi {{q4List}}. Asupan air mencapai {{q5}}.",
+  "energyControl": "Bunda {{q1}} dan {{q2}}. Kualitas tidur semalam {{q6}}.",
+  "painManagement": "Terdapat keluhan: {{q7List}}. Kondisi lain: {{q8}}, {{q9}}. Gerakan janin {{q10}}.",
   "doctorAdvice": {
     "aman": "Bunda aman, tetap jaga kesehatan dan rutin cek ya.",
     "waspada": "Bunda perlu menemui dokter dalam 3-7 hari ke depan jika gejala berlanjut.",

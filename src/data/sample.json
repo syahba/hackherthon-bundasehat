@@ -53,3 +53,11 @@
     "nutrition": ["N01"]
   }
 }
+
+// answer
+{
+  "q5": {
+    "id": "Q05",
+    "answer": ["Q05_OPT_LESS4", "Q05_OPT_4_6"],
+  },
+}
