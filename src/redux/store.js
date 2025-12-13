@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import profileReducer from "./slices/profileSlice";
-import summaryReducer from "./slices/summarySlice";
+import profile from "./slices/profileSlice";
+import summaries from "./slices/summarySlice";
 
 const store = configureStore({
   reducer: {
-    profile: profileReducer,
-    summaries: summaryReducer,
+    profile,
+    summaries,
   },
 });
 
