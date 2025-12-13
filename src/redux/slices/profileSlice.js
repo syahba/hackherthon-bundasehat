@@ -1,48 +1,29 @@
-// src/redux/slices/profileSlice.js
 import { createSlice } from "@reduxjs/toolkit";
+import { get, set } from "../../utils/persistData";
+import { applyPregnancyWeekUpdate, calculateDueDate, getDueDateCountdown, shouldUpdatePregnancyWeek, updateStreak } from "../../utils/userCalculation";
 import { formatISODate } from "../../utils/dateFormatter";
-import {
-  updateStreak,
-  applyPregnancyWeekUpdate,
-  shouldUpdatePregnancyWeek,
-  calculateDueDate,
-} from "../../utils/userCalculation";
 
 const STORAGE_KEY = "profile";
-
-const loadFromStorage = () => {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY));
-  } catch {
-    return null;
-  }
-};
-
-const saveToStorage = (data) => {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-};
 
 const profileSlice = createSlice({
   name: "profile",
   initialState: {
-    data: loadFromStorage(),
+    data: get(STORAGE_KEY),
   },
   reducers: {
     saveProfile: (state, action) => {
-      // action.payload is the profile object
       state.data = action.payload;
+
       // compute dueDate if not present
       if (state.data && !state.data.dueDate) {
         try {
-          state.data.dueDate = calculateDueDate(
-            state.data.registeredDate,
-            state.data.registeredWeek
-          );
+          state.data.dueDate = calculateDueDate(state.data.registeredDate, state.data.registeredWeek);
+          state.data.dueDateCountDown = getDueDateCountdown(state.data.dueDate);
         } catch (err) {
           console.log(err)
         }
       }
-      saveToStorage(state.data);
+      set(STORAGE_KEY, state.data);
     },
 
     // called silently after checkup
@@ -61,7 +42,7 @@ const profileSlice = createSlice({
         streak: newStreak,
       };
 
-      saveToStorage(state.data);
+      set(STORAGE_KEY, state.data);
     },
 
     silentUpdatePregnancyWeek: (state) => {
@@ -69,7 +50,7 @@ const profileSlice = createSlice({
       if (!shouldUpdatePregnancyWeek(state.data)) return;
 
       state.data = applyPregnancyWeekUpdate(state.data);
-      saveToStorage(state.data);
+      set(STORAGE_KEY, state.data);
     },
   },
 });

@@ -5,7 +5,6 @@ const STORAGE_KEY = "profile";
 export default function usePersistedProfile() {
   const [profile, setProfile] = useState(null);
 
-  // synchronous mount read (fixes cascading render warning)
   useLayoutEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) return;

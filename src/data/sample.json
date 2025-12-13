@@ -8,6 +8,7 @@
   "registeredDate": "2025-12-08",
   "currentWeek": 12,
   "dueDate": "2025-12-08",
+  "dueDateCountDown": 0,
   "streak": 1,
   "lastCheckupDate": "2025-12-08"
 }
