@@ -6,7 +6,7 @@ export function calculatePregnancyWeek(registeredWeek, registeredDate) {
   const reg = new Date(registeredDate);
   const diffDays = Math.floor((now - reg) / (1000 * 60 * 60 * 24));
   const addedWeeks = Math.floor(diffDays / 7);
-  return Math.max(0, registeredWeek + addedWeeks);
+  return Math.max(0, parseInt(registeredWeek) + parseInt(addedWeeks));
 }
 
 // detect if the pregnancy week should update (on app open)
