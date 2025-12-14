@@ -8,7 +8,7 @@ import MindMapPage from "./pages/MindMapPage";
 
 function App() {
   return (
-    <BrowserRouter basename="/hackherthon-bundasehat/">
+    <BrowserRouter basename="/hackherthon-bundasehat">
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
