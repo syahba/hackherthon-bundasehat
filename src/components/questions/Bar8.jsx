@@ -55,7 +55,7 @@ function Bar8({ option, answers, setAnswers, isBarActive, isSliderVisible }) {
         {isSliderVisible && <Slider id={id}></Slider>}
       </button>
 
-      <img src={img} alt="" className={`${width}`} />
+      <img src={`/hackherthon-bundasehat${img}`} alt="" className={`${width}`} />
     </div>
   );
 }

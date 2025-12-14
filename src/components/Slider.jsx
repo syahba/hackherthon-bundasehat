@@ -15,8 +15,8 @@ function Slider({ id }) {
   return (
     <div className={`absolute ${position} z-10`}>
       <div className="secondary px-4 py-2 rounded-full shadow-md">
-        <img src="/arrow.svg" alt="icon" className="w-4 mb-3" />
-        <img src="/arrow.svg" alt="icon" className="w-4 rotate-180" />
+        <img src="/hackherthon-bundasehat/arrow.svg" alt="icon" className="w-4 mb-3" />
+        <img src="/hackherthon-bundasehat/arrow.svg" alt="icon" className="w-4 rotate-180" />
       </div>
     </div>
   );

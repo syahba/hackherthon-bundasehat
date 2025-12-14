@@ -23,7 +23,7 @@ function Card2({ option, answers, setAnswers }) {
         answers.q2.answers[0] == id ? "secondary" : "accent"
       } w-full flex flex-col items-center justify-center py-6 px-10 ${margin} rounded-xl shadow-lg cursor-pointer hover:scale-105 transition-all duration-300`}
     >
-      <img src={img} alt="icon" className="" />
+      <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="" />
       <p className="neutral paragraph p1">{option.text}</p>
     </button>
   );

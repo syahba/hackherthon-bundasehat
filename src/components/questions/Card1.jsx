@@ -17,7 +17,7 @@ function Card1({ option, answers, setAnswers }) {
       }
       className="flex items-center relative mt-10 mb-6 cursor-pointer hover:scale-105 transition-all duration-300"
     >
-      <img src={img} alt="icon" className="w-24 absolute -left-1.5" />
+      <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="w-24 absolute -left-1.5" />
       <p
         className={`neutral paragraph p1 ${
           answers.q1.answers[0] == id ? "secondary" : "accent"

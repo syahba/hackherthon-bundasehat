@@ -53,7 +53,7 @@ function MindMapPage() {
           onClick={() => navigate(`/library/${category}`)}
           className="absolute top-20 right-0 cursor-pointer"
         >
-          <img src="/close.svg" alt="icon" />
+          <img src="/hackherthon-bundasehat/close.svg" alt="icon" />
         </button>
 
         <div className="flex flex-col items-center">

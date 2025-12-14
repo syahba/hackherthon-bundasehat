@@ -46,7 +46,7 @@ function Card3({ option, answers, setAnswers }) {
       className={`p-4 gap-6 ${color} w-full flex flex-col items-center justify-between rounded-xl shadow-lg cursor-pointer hover:scale-105 transition-all duration-300`}
     >
       <p className="neutral paragraph p1 max-w-30">{option.text}</p>
-      <img src={img} alt="icon" className="max-w-24" />
+      <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="max-w-24" />
     </button>
   );
 }

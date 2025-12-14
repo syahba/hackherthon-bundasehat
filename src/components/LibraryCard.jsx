@@ -23,7 +23,7 @@ function LibraryCard({ library }) {
         <p className="c paragraph">{library.function}</p>
       </div>
 
-			<img src={`/${library.id}.svg`} alt="icon" className="pt-0.5" />
+			<img src={`/hackherthon-bundasehat/${library.id}.svg`} alt="icon" className="pt-0.5" />
     </button>
   );
 }

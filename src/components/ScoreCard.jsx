@@ -6,7 +6,7 @@ function ScoreCard({ summary }) {
 
         <div className="flex items-center gap-4">
           <div className="bg-white rounded-full px-1.5 py-1 outline-[var(--secondary)] outline-1">
-            <img src="/health-score.svg" alt="icon" className="w-6" />
+            <img src="/hackherthon-bundasehat/health-score.svg" alt="icon" className="w-6" />
           </div>
 
           <h1 className="heading h1 text-white">{summary.healthScore}/10</h1>
@@ -18,7 +18,7 @@ function ScoreCard({ summary }) {
 
         <div className="flex items-center gap-4">
           <div className="bg-white rounded-full px-1 pb-1 outline-[var(--secondary)] outline-1">
-            <img src="/nutrition-score.svg" alt="icon" className="w-6 m-1" />
+            <img src="/hackherthon-bundasehat/nutrition-score.svg" alt="icon" className="w-6 m-1" />
           </div>
 
           <h1 className="heading h1 text-white">{summary.nutritionScore}/10</h1>

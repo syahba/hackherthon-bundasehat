@@ -86,7 +86,7 @@ function Card7({ option, answers, setAnswers }) {
         {option.text}
       </p>
 
-      <img src={img} alt="icon" className="max-w-12 -m-0.7"></img>
+      <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="max-w-12 -m-0.7"></img>
     </button>
   );
 }

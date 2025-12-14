@@ -20,7 +20,7 @@ function StatusCard({ title, value, affix }) {
         </div>
 
         <img
-          src={img}
+          src={`/hackherthon-bundasehat${img}`}
           alt="icon"
           className="max-w-20 absolute bottom-1.5 right-1.5 -m-1"
         />

@@ -26,7 +26,7 @@ function Card5({ option, answers, setAnswers }) {
       <div className="flex">
         {
           renderImg.map((v, i) => (
-            <img key={i} src={'/q5.svg'} alt="icon" className="max-w-24 -m-0.5" />
+            <img key={i} src={'/hackherthon-bundasehat/q5.svg'} alt="icon" className="max-w-24 -m-0.5" />
           ))
         }
       </div>

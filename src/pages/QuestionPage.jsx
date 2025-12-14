@@ -211,7 +211,7 @@ function QuestionPage() {
 
       <div className="flex flex-col items-end gap-4 mt-20">
         <button className="cursor-pointer" onClick={() => navigate("/")}>
-          <img src="/cross.svg" alt="icon" />
+          <img src="/hackherthon-bundasehat/cross.svg" alt="icon" />
         </button>
 
         <ProgressBar page={index + 1}></ProgressBar>
@@ -258,7 +258,7 @@ function QuestionPage() {
       >
         <div className="flex items-center justify-between gap-10">
           <p className="neutral paragraph p1 max-w-45">{response}</p>
-          <img src="/heart.svg" alt="icon" />
+          <img src="/hackherthon-bundasehat/heart.svg" alt="icon" />
         </div>
 
         <Button text={"Selanjutnya"} onClick={handleNext}></Button>

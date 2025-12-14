@@ -38,7 +38,7 @@ function Card4({ option, answers, setAnswers }) {
       } w-full flex items-start justify-center rounded-xl shadow-lg cursor-pointer hover:scale-105 transition-all duration-300`}
     >
       <p className="neutral paragraph p1 text-start w-16">{option.text}</p>
-      <img src={img} alt="icon" className="py-5 px-2 -m-2" />
+      <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="py-5 px-2 -m-2" />
     </button>
   )
 }

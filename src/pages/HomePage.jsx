@@ -28,7 +28,7 @@ function HomePage() {
           </p>
 
           <div className="primary flex items-center py-4 px-5 rounded-xl shadow-lg justify-center gap-4.5">
-            <img src="/hero.svg" alt="hero" className="max-w-32 -ml-3.5" />
+            <img src="/hackherthon-bundasehat/hero.svg" alt="hero" className="max-w-32 -ml-3.5" />
 
             <div className="flex flex-col items-end gap-8 -mt-2">
               <h1 className="text-white h2 heading text-end leading-8">
@@ -78,7 +78,7 @@ function HomePage() {
             </div>
           ) : (
             <div className="flex flex-col items-center justify-center mt-10">
-              <img src="/empty.svg" alt="icon" />
+              <img src="/hackherthon-bundasehat/empty.svg" alt="icon" />
               <p className="neutral paragraph p2 text-center">
                 Riwayat daily checkup masih kosong. <br></br> Yuk lakukan
                 checkup pertama!

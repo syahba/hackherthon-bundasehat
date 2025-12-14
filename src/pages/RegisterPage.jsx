@@ -50,7 +50,7 @@ function RegisterPage() {
       <div className="neutral flex flex-col items-center gap-1">
         <h1 className="text-5xl logo">BundaSehat</h1>
         <p className="c paragraph">Pendamping kehamilan sehat setiap hari</p>
-        <img src="/logo.svg" alt="logo" className="my-3" />
+        <img src="/hackherthon-bundasehat/logo.svg" alt="logo" className="my-3" />
         <p className="p1 paragraph">Silahkan mendaftar terlebih dahulu!</p>
       </div>
 

@@ -31,12 +31,12 @@ function LibraryPopUp({ library, topic, isModal, setIsModal }) {
         onClick={() => setIsModal(!isModal)}
         className="absolute top-4 right-4 cursor-pointer"
       >
-        <img src="/close.svg" alt="icon" className="w-5" />
+        <img src="/hackherthon-bundasehat/close.svg" alt="icon" className="w-5" />
       </button>
 
       <div className="w-68 flex flex-col gap-5">
         <div className="flex flex-col items-center gap-4">
-          <img src={img} alt="icon" />
+          <img src={`/hackherthon-bundasehat${img}`} alt="icon" />
 
           <div className="flex flex-col items-center justify-center gap-2">
             <h2 className="text-[var(--primary)] heading h2 text-center">

@@ -109,7 +109,7 @@ function SummaryCard({ summary, type }) {
           <h3 className="text-[var(--primary)] heading h3 mb-1">{title}</h3>
           <p className="p2 paragraph neutral w-56">{data.summary}</p>
         </div>
-        <img src={icon} alt="icon" className="" />
+        <img src={`/hackherthon-bundasehat${icon}`} alt="icon" className="" />
       </div>
 
       {type == "condition" && (
@@ -118,7 +118,7 @@ function SummaryCard({ summary, type }) {
         >
           <div className="flex items-center justify-center gap-2">
             <p className="neutral paragraph p2 font-bold">{summary.status}</p>
-            <img src={img} alt="icon" className="w-4" />
+            <img src={`/hackherthon-bundasehat${img}`} alt="icon" className="w-4" />
           </div>
 
           {advice}

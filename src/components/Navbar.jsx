@@ -15,7 +15,7 @@ function Navbar({ isOpen, setIsOpen }) {
       <div className="pt-2.5 pb-4 pl-4 pr-5 bg-white flex items-center justify-between shadow-md">
         <div className="flex items-center gap-1.5">
           <img
-            src="/logo.svg"
+            src="/hackherthon-bundasehat/logo.svg"
             alt="logo"
             className="max-w-8 -mb-1"
           />
@@ -23,7 +23,7 @@ function Navbar({ isOpen, setIsOpen }) {
         </div>
 
         <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
-          <img src="/hamburg.svg" alt="hamburger" className="w-5 mt-2.5" />
+          <img src="/hackherthon-bundasehat/hamburg.svg" alt="hamburger" className="w-5 mt-2.5" />
         </button>
       </div>
 
@@ -33,7 +33,7 @@ function Navbar({ isOpen, setIsOpen }) {
             onClick={() => handleNavigate('/')}
             className="flex items-center gap-4 text-white cursor-pointer p-4 my-2 hover:bg-[#B8E5DE] hover:text-[var(--neutral)] transition-all duration-150"
           >
-            <img src="/nav-1.svg" alt="icon" />
+            <img src="/hackherthon-bundasehat/nav-1.svg" alt="icon" />
             <p className="paragraph p1 font-bold">Home Page</p>
           </button>
 
@@ -42,7 +42,7 @@ function Navbar({ isOpen, setIsOpen }) {
               onClick={() => setIsSubMenu(!isSubMenu)}
               className="w-full flex items-center gap-4 text-white cursor-pointer p-4 hover:bg-[#B8E5DE] hover:text-[var(--neutral)] transition-all duration-150"
             >
-              <img src="/nav-2.svg" alt="icon" />
+              <img src="/hackherthon-bundasehat/nav-2.svg" alt="icon" />
               <p className="paragraph p1 font-bold">Perpustakaan</p>
               <img
                 src="/arrow.svg"
@@ -56,7 +56,7 @@ function Navbar({ isOpen, setIsOpen }) {
                   onClick={() => handleNavigate("/library/herbal")}
                   className="flex items-center gap-3 text-white cursor-pointer py-2 px-4 hover:bg-[#B8E5DE] hover:text-[var(--neutral)] transition-all duration-150"
                 >
-                  <img src="/nav-4.svg" alt="icon" />
+                  <img src="/hackherthon-bundasehat/nav-4.svg" alt="icon" />
                   <p className="paragraph p1">Ramuan Herbal</p>
                 </button>
 
@@ -65,7 +65,7 @@ function Navbar({ isOpen, setIsOpen }) {
                   className="flex items-center gap-3 text-white cursor-pointer py-2 px-4 hover:bg-[#B8E5DE] hover:text-[var(--neutral)] transition-all duration-150"
                 >
                   <img
-                    src="/summary-2.svg"
+                    src="/hackherthon-bundasehat/summary-2.svg"
                     alt="icon"
                     className="max-w-6 mr-0.5"
                   />
@@ -76,7 +76,7 @@ function Navbar({ isOpen, setIsOpen }) {
                   onClick={() => handleNavigate("/library/danger")}
                   className="flex items-center gap-3 text-white cursor-pointer py-2 px-4 hover:bg-[#B8E5DE] hover:text-[var(--neutral)] transition-all duration-150"
                 >
-                  <img src="/summary-4.svg" alt="icon" className="max-w-6" />
+                  <img src="/hackherthon-bundasehat/summary-4.svg" alt="icon" className="max-w-6" />
                   <p className="paragraph p1 pr-3">Tanda Bahaya</p>
                 </button>
               </div>
