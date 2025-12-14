@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import QuestionPage from "./pages/QuestionPage";
@@ -8,7 +8,7 @@ import MindMapPage from "./pages/MindMapPage";
 
 function App() {
   return (
-    <BrowserRouter basename="/hackherthon-bundasehat">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
@@ -32,7 +32,7 @@ function App() {
           element={<MindMapPage></MindMapPage>}
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
