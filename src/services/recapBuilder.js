@@ -8,57 +8,86 @@ import HYDRATION from "../data/recommendations/hydration.json";
 import PHYSICAL from "../data/recommendations/physical.json";
 import REST from "../data/recommendations/rest.json";
 import TEMPLATES from "../data/templates.json";
-import { formatISODate, getTrimesterFromWeek } from "../utils/dateFormatter";
+import {
+  formatSummaryDate,
+  getTrimesterFromWeek,
+} from "../utils/dateFormatter";
 import { calculatePregnancyWeek } from "../utils/userCalculation";
+import { get } from "../utils/persistData";
+
+const STORAGE_KEY = "summarries";
 
 export const buildRecap = (answers, profile) => {
   const recomPain = [];
   const recomNutrition = [];
   const recomEnergy = [];
+
+  // TODO: baru increment, perlu dibuat format 10/10
+  const MAX_HEALTH_SCORE = 21;
+  const MAX_NUTRITION_SCORE = 13;
   let healthScore = 0;
   let nutritionScore = 0;
 
   const trimester = getTrimesterFromWeek(profile.week);
 
-  answers.map((a) => {
-    const question = QUESTIONS.find((v) => v.id === a.id);
+  Object.keys(answers).map((key) => {
+    const question = QUESTIONS.find((v) => v.id === answers[key].id);
     const category = question.category;
 
-    a.answer.map((opt) => {
+    answers[key].answers.map((opt) => {
       const option = question.options.find((v) => v.optionId === opt);
+      console.log();
 
       // map answers to get recommendation
       const match = option.matches;
-      const recom = match.map((m) => findRecom(m, trimester));
+      console.log(match);
+      let recom;
+      if (match.length !== 0) {
+        console.log(match);
+        recom = match.map((m) => findRecom(m, trimester));
+        console.log(recom);
+      }
 
       // increment score and add recommendation list
       if (category == "pain") {
-        recomPain.push(recom);
+        if (recom) recomPain.push(...recom);
         healthScore += option.score;
       } else if (category == "energy") {
-        recomEnergy.push(recom);
+        if (recom) recomEnergy.push(...recom);
         healthScore += option.score;
       } else {
-        recomNutrition.push(recom);
+        if (recom) recomNutrition.push(...recom);
         nutritionScore += option.score;
       }
     });
   });
 
+  // normalize score
+  const normalizedHealthPct = Math.min(
+    100,
+    (healthScore / MAX_HEALTH_SCORE) * 100
+  );
+  const normalizedNutritionPct = Math.min(
+    100,
+    (nutritionScore / MAX_NUTRITION_SCORE) * 100
+  );
+  const finalHealthScore = Math.round(normalizedHealthPct / 10);
+  const finalNutritionScore = Math.round(normalizedNutritionPct / 10);
+
   const currentTime = new Date();
   const status = getStatus(healthScore, nutritionScore, recomPain);
-  const summary = generateSummary(answers)
+  const summary = generateSummary(answers);
 
   const recap = {
-    id: currentTime,
-    date: formatISODate(currentTime),
+    id: createId(),
+    date: formatSummaryDate(currentTime),
     pregnancyWeek: calculatePregnancyWeek(
       profile.registeredWeek,
       profile.registeredDate
     ),
     trimester,
-    healthScore,
-    nutritionScore,
+    healthScore: finalHealthScore,
+    nutritionScore: finalNutritionScore,
     status,
     overallCondition: {
       summary: summary.overallCondition,
@@ -81,6 +110,12 @@ export const buildRecap = (answers, profile) => {
   return recap;
 };
 
+const createId = () => {
+  const data = get(STORAGE_KEY);
+  const index = data ? data.length + 1 : "1";
+  return `Daily CheckUp - ${index}`;
+};
+
 const generateSummary = (answers) => {
   const reportingData = {};
   const summaries = {};
@@ -94,13 +129,13 @@ const generateSummary = (answers) => {
     const answerData = answers[`q${qId.slice(1)}`];
     const q = questionMap[qId];
 
-    if (!q || !answerData || answerData.answer.length === 0) {
+    if (!q || !answerData || answerData.answers.length === 0) {
       return "belum dilaporkan";
     }
 
     const selectedIds = q.allowMultiple
-      ? answerData.answer
-      : [answerData.answer[0]];
+      ? answerData.answers
+      : [answerData.answers[0]];
 
     const texts = selectedIds
       .map((aId) => {
@@ -134,7 +169,8 @@ const generateSummary = (answers) => {
     .replace("sangat buruk", "buruk");
 
   // handle complaints
-  const q7Answers = answers.q7 ? answers.q7.answer : [];
+  const q7Answers = answers.q7 ? answers.q7.answers : [];
+  console.log(q7Answers, answers.q7);
   const hasQ7Complaint = q7Answers.some((aId) => aId !== "Q07_OPT_NONE");
   reportingData.q7List = hasQ7Complaint
     ? getAnswerText("Q07")
@@ -176,7 +212,7 @@ const generateSummary = (answers) => {
     .replace("{{q9}}", reportingData.q9);
 
   return summaries;
-}
+};
 
 const getStatus = (healthScore, nutritionScore, recomPain) => {
   let status;
@@ -217,15 +253,25 @@ const getAdvice = (status) => {
 
 const getData = (type, match) => {
   let data = "";
+  console.log(match);
 
   // find match
-  if (type == "nutrition") data = NUTRITIONS.find((v) => v.id === match);
-  if (type == "herbal") data = HERBALS.find((v) => v.id === match);
-  if (type == "danger") data = DANGERS.find((v) => v.id === match);
-  if (type == "mood") data = MOOD.find((v) => v.id === match);
-  if (type == "hydration") data = HYDRATION.find((v) => v.id === match);
-  if (type == "physical") data = PHYSICAL.find((v) => v.id === match);
-  if (type == "rest") data = REST.find((v) => v.id === match);
+  if (type == "nutrition") {
+    data = NUTRITIONS.find((v) => v.id == match);
+  } else if (type == "herbal") {
+    data = HERBALS.find((v) => v.id == match);
+  } else if (type == "danger") {
+    data = DANGERS.find((v) => v.id == match);
+  } else if (type == "mood") {
+    data = MOOD.find((v) => v.id == match);
+  } else if (type == "hydration") {
+    data = HYDRATION.find((v) => v.id == match);
+  } else if (type == "physical") {
+    data = PHYSICAL.find((v) => v.id == match);
+  } else if (type == "rest") {
+    data = REST.find((v) => v.id == match);
+    console.log(data);
+  }
 
   return data;
 };
@@ -233,29 +279,36 @@ const getData = (type, match) => {
 const findRecom = (match, trimester) => {
   let prefix = "";
   let type = "";
+  console.log(match);
 
   // get recommandation
   if (match.startsWith("N")) {
     type = "nutrition";
     prefix = "Konsumsi ";
-  }
-  if (match.startsWith("H")) {
+  } else if (match.startsWith("H")) {
     type = "herbal";
     prefix = "Minum ramuan herbal ";
-  }
-  if (match.startsWith("D")) {
+  } else if (match.startsWith("D")) {
     type = "danger";
     prefix = "Pelajari penyebab ";
+  } else if (match.includes("HYDRATION")) {
+    type = "hydration";
+  } else if (match.includes("MOOD")) {
+    type = "mood";
+  } else if (match.includes("PHYS")) {
+    type = "physical";
+  } else if (match.includes("REST")) {
+    type = "rest";
   }
-  if (match.includes("HYDRATION")) type = "hydration";
-  if (match.includes("MOOD")) type = "mood";
-  if (match.includes("PHYS")) type = "physical";
-  if (match.includes("REST")) type = "rest";
 
+  console.log(type);
   const data = getData(type, match, trimester);
-  if (!data.trimesterSafe.includes(trimester)) return;
+  console.log(data);
+  // if (data.hasOwnProperty('name')) {
+  //   if (!data.trimesterSafe.includes(trimester)) return null;
+  // }
 
-  const item = data.title.toLocaleLowerCase();
+  const item = data.title;
 
   return {
     type,

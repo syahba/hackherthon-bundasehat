@@ -102,49 +102,49 @@
       {
         "optionId": "Q04_OPT_AYAM",
         "text": "Daging Ayam",
-        "response": "Bagus — sumber protein hewani yang mudah dicerna.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N06"]
       },
       {
         "optionId": "Q04_OPT_SAPI",
         "text": "Daging Sapi",
-        "response": "Sapi kaya zat besi dan protein.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": []
       },
       {
         "optionId": "Q04_OPT_IKAN",
         "text": "Ikan",
-        "response": "Ikan berguna untuk omega-3 dan protein.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N04"]
       },
       {
         "optionId": "Q04_OPT_TELUR",
         "text": "Telur",
-        "response": "Telur sumber protein dan vitamin B.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N02", "N10"]
       },
       {
         "optionId": "Q04_OPT_SAYUR",
         "text": "Sayur-Sayuran",
-        "response": "Sayur membantu vitamin dan serat.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N01", "N09"]
       },
       {
         "optionId": "Q04_OPT_BIJIBIJIAN",
         "text": "Biji-Bijian",
-        "response": "Biji-bijian memberi serat dan energi stabil.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N08"]
       },
       {
         "optionId": "Q04_OPT_TAHUTEMPE",
         "text": "Tahu/Tempe",
-        "response": "Sumber protein nabati yang bagus.",
+        "response": "Bagus! Bunda sudah makan bernutrisi.",
         "score": 1,
         "matches": ["N06", "N07"]
       },
@@ -245,21 +245,21 @@
       {
         "optionId": "Q07_OPT_PUSING",
         "text": "Pusing",
-        "response": "Istirahat dan periksa tanda lain jika berlanjut.",
+        "response": "Awasi keluhan bila berlanjut ya Bunda..",
         "score": 1,
         "matches": ["D05", "REC_REST_LIE_DOWN"]
       },
       {
         "optionId": "Q07_OPT_NYERI_PERUT",
         "text": "Nyeri Perut",
-        "response": "Catat intensitas nyeri dan konsultasikan jika parah.",
+        "response": "Awasi keluhan bila berlanjut ya Bunda.",
         "score": 1,
         "matches": ["D06", "REC_REST_MEDICAL_CHECK"]
       },
       {
         "optionId": "Q07_OPT_NYERI_DADA",
         "text": "Nyeri Dada",
-        "response": "Segera periksa jika nyeri hebat atau sesak napas.",
+        "response": "Awasi keluhan bila berlanjut ya Bunda.",
         "score": 1,
         "matches": ["D07", "REC_REST_EMERGENCY"]
       },
@@ -280,7 +280,7 @@
     "options": [
       {
         "optionId": "Q08_OPT_NONE",
-        "text": "Tidak ada sama sekali",
+        "text": "Tidak ada bengkak",
         "response": "Yeay senang mendengarnya.",
         "score": 3,
         "matches": []
@@ -290,7 +290,7 @@
         "text": "Sedikit bengkak",
         "response": "Istirahatkan areanya & jaga asupan cairan ya.",
         "score": 2,
-        "matches": ["REC_REST_LEG_ELEVATE", "REC_HYDRATION_ADJUST", "H02"]
+        "matches": ["REC_REST_LEG_ELEVATE", "H02"]
       },
       {
         "optionId": "Q08_OPT_SEVERE",

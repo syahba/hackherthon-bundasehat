@@ -1,7 +1,4 @@
 import { formatISODate } from "./dateFormatter";
-import { get, set } from "./persistData";
-
-const STORAGE_KEY = "profile";
 
 // count current pregnancy week
 export function calculatePregnancyWeek(registeredWeek, registeredDate) {
@@ -11,7 +8,6 @@ export function calculatePregnancyWeek(registeredWeek, registeredDate) {
   const addedWeeks = Math.floor(diffDays / 7);
   return Math.max(0, registeredWeek + addedWeeks);
 }
-
 
 // detect if the pregnancy week should update (on app open)
 export function shouldUpdatePregnancyWeek(profile) {
@@ -42,8 +38,6 @@ export function updateStreak(lastCheckDate, currentStreak) {
 
 // calculate due date
 export const calculateDueDate = (registeredDate, registeredWeek) => {
-  let profileData = get(STORAGE_KEY);
-
   const totalPregnancyDays = 280;
   const daysInWeek = 7;
 
@@ -56,22 +50,11 @@ export const calculateDueDate = (registeredDate, registeredWeek) => {
   const dueDate = new Date(regDate);
   dueDate.setDate(regDate.getDate() + remainingDays);
 
-  // store due date
   const dueDateString = formatISODate(dueDate);
-
-  if (profileData) {
-    profileData.dueDate = dueDateString;
-    set(STORAGE_KEY, profileData);
-  } else {
-    set(STORAGE_KEY, { dueDate: dueDateString });
-  }
-
-  return dueDate;
+  return dueDateString;
 };
 
 export const getDueDateCountdown = (dueDate) => {
-  let profileData = get(STORAGE_KEY);
-
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -84,13 +67,10 @@ export const getDueDateCountdown = (dueDate) => {
   // convert time difference to day
   const daysUntilDue = Math.ceil(timeDifference / MS_PER_DAY);
 
-  // store countdown
-  profileData.dueDateCountDown = daysUntilDue;
-  set(STORAGE_KEY, profileData);
-
   if (daysUntilDue < 0) {
-    return "0 days";
+    return 0;
   }
 
-  return `${daysUntilDue} days`;
+  return daysUntilDue;
 };
+

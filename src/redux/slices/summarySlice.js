@@ -12,6 +12,7 @@ const summarySlice = createSlice({
   },
   reducers: {
     addSummary: (state, action) => {
+      if (!state.list) state.list = [];
       state.list.push(action.payload);
       set(STORAGE_KEY, state.list);
     },
@@ -23,12 +24,12 @@ export const { addSummary, setLoading, setError } = summarySlice.actions;
 // thunks
 export const finishCheckup = (answers, profile) => async (dispatch) => {
   try {
-    const summary = buildRecap({ answers, userProfile: profile });
+    console.log(answers, profile)
+    const summary = buildRecap(answers, profile);
 
+    console.log(summary)
     dispatch(addSummary(summary));
-    dispatch(updateAfterCheckup()); // streak + lastCheckupDate update
-
-    return summary;
+    return dispatch(updateAfterCheckup());
   } catch (err) {
     console.log(err)
   }

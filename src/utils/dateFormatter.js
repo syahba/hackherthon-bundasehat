@@ -1,5 +1,19 @@
-// Format Date to YYYY-MM-DD
-export function formatISODate(d) {
+export const formatSummaryDate = (date) => {
+  const dateObject = new Date(date);
+
+  const day = String(dateObject.getDate()).padStart(2, "0");
+  const year = dateObject.getFullYear();
+  const hour = String(dateObject.getHours()).padStart(2, "0");
+  const minute = String(dateObject.getMinutes()).padStart(2, "0");
+
+  const month = new Intl.DateTimeFormat("id-ID", { month: "long" }).format(
+    dateObject
+  );
+
+  return `${day} ${month} ${year} ${hour}:${minute}`;
+}
+
+export const formatISODate = (d) => {
   const iso = new Date(d).toISOString();
   return iso.slice(0, 10);
 }

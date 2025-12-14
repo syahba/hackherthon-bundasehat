@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import RegisterPage from "./pages/RegisterHome";
+import RegisterPage from "./pages/RegisterPage";
 import QuestionPage from "./pages/QuestionPage";
 import SummaryPage from "./pages/SummaryPage";
 import LibraryPage from "./pages/LibraryPage";
@@ -10,27 +10,27 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Routes path="/" element={<HomePage></HomePage>}></Routes>
-        <Routes
+        <Route path="/" element={<HomePage></HomePage>}></Route>
+        <Route
           path="/register"
           element={<RegisterPage></RegisterPage>}
-        ></Routes>
-        <Routes
-          path="/question/:id"
+        ></Route>
+        <Route
+          path="/question"
           element={<QuestionPage></QuestionPage>}
-        ></Routes>
-        <Routes
+        ></Route>
+        <Route
           path="/summary/:id"
           element={<SummaryPage></SummaryPage>}
-        ></Routes>
-        <Routes
+        ></Route>
+        <Route
           path="/library/:category"
           element={<LibraryPage></LibraryPage>}
-        ></Routes>
-        <Routes
+        ></Route>
+        <Route
           path="/library/:category/:id"
           element={<MindMapPage></MindMapPage>}
-        ></Routes>
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

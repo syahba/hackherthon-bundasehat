@@ -1,6 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { get, set } from "../../utils/persistData";
-import { applyPregnancyWeekUpdate, calculateDueDate, getDueDateCountdown, shouldUpdatePregnancyWeek, updateStreak } from "../../utils/userCalculation";
+import {
+  applyPregnancyWeekUpdate,
+  shouldUpdatePregnancyWeek,
+  updateStreak,
+} from "../../utils/userCalculation";
 import { formatISODate } from "../../utils/dateFormatter";
 
 const STORAGE_KEY = "profile";
@@ -13,20 +17,7 @@ const profileSlice = createSlice({
   reducers: {
     saveProfile: (state, action) => {
       state.data = action.payload;
-
-      // compute dueDate if not present
-      if (state.data && !state.data.dueDate) {
-        try {
-          state.data.dueDate = calculateDueDate(state.data.registeredDate, state.data.registeredWeek);
-          state.data.dueDateCountDown = getDueDateCountdown(state.data.dueDate);
-        } catch (err) {
-          console.log(err)
-        }
-      }
-      set(STORAGE_KEY, state.data);
     },
-
-    // called silently after checkup
     updateAfterCheckup: (state) => {
       if (!state.data) return;
 
@@ -44,7 +35,6 @@ const profileSlice = createSlice({
 
       set(STORAGE_KEY, state.data);
     },
-
     silentUpdatePregnancyWeek: (state) => {
       if (!state.data) return;
       if (!shouldUpdatePregnancyWeek(state.data)) return;
@@ -57,5 +47,14 @@ const profileSlice = createSlice({
 
 export const { saveProfile, updateAfterCheckup, silentUpdatePregnancyWeek } =
   profileSlice.actions;
+
+export const storeProfile = (profile) => async (dispatch) => {
+  try {
+    set(STORAGE_KEY, profile);
+    return dispatch(saveProfile(profile));
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 export default profileSlice.reducer;

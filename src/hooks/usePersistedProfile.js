@@ -1,4 +1,5 @@
 import { useState, useCallback, useLayoutEffect } from "react";
+import { get, set } from "../utils/persistData";
 
 const STORAGE_KEY = "profile";
 
@@ -6,7 +7,7 @@ export default function usePersistedProfile() {
   const [profile, setProfile] = useState(null);
 
   useLayoutEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
+    const saved = get(STORAGE_KEY);
     if (!saved) return;
     try {
       setProfile(JSON.parse(saved));
@@ -16,7 +17,7 @@ export default function usePersistedProfile() {
   }, []);
 
   const saveProfile = useCallback((newProfile) => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(newProfile));
+    set(STORAGE_KEY, newProfile)
     setProfile(newProfile);
   }, []);
 
