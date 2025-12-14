@@ -8,7 +8,7 @@ import MindMapPage from "./pages/MindMapPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bunda-sehat">
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
